@@ -70,7 +70,6 @@
         <div id="listaProductos" class="lista-items"></div>
     </div>
 
-    <!-- MODAL -->
     <div class="modal" id="modalOpciones" onclick="if(event.target===this) cerrarModal()">
         <div class="modal-body">
             <div class="modal-header">
@@ -88,7 +87,6 @@
         </div>
     </div>
 
-    <!-- CAPA DE IMPRESIÓN -->
     <div id="capaImpresion" style="display: none;"></div>
 
     <script src="productos.js"></script>
@@ -99,7 +97,7 @@
             const container = document.getElementById('listaProductos');
             container.innerHTML = '';
             
-            // Muestra los primeros 30 resultados para no saturar la pantalla
+            // Muestra los primeros 30 resultados para no saturar la pantalla inicialmente
             arr.slice(0, 30).forEach(p => {
                 const item = document.createElement('div');
                 item.className = 'tarjeta-item';
