@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xiaomi | Creador de Etiquetas Matriz Exactas</title>
+    <title>Xiaomi | Creador de Etiquetas de Oferta Matriz</title>
     <style>
         :root {
             --xiaomi-orange: #FF6700;
@@ -36,23 +36,23 @@
         .grid-etiquetas { display: grid; grid-template-columns: repeat(2, 10.0cm); justify-content: center; gap: 0cm; background: #fff; }
 
         /* =======================================================
-           ESTRUCTURA DE MEDIDAS MILIMÉTRICAS DESDE EXCEL
+           FORMATO DE OFERTA EN CENTÍMETROS EXACTOS DESDE EXCEL
            ======================================================= */
         .ficha-matriz {
             width: 10.0cm;
             height: 4.0cm;
-            border: 0.3px dashed #A6A6A6; /* Línea de corte limpia para guillotina */
+            border: 1px solid #000000; /* Margen pequeño en color negro solicitado */
             background: #FFFFFF;
             overflow: hidden;
             box-sizing: border-box;
-            padding: 0.4cm 1.26cm; /* Centra el bloque de 7.48cm perfectamente en la etiqueta de 10cm */
+            padding: 0.4cm 1.26cm; /* Centrado horizontal milimétrico del bloque de 7.48cm */
             display: block;
         }
 
-        /* Fila 1: Nombre del Artículo */
+        /* Fila 1: Nombre (1.09cm, Calibri 10, Fondo Blanco) */
         .bloque-nombre {
             width: 7.48cm;
-            height: 1.0cm; /* Ajustado sutilmente para margen interno */
+            height: 1.09cm;
             background-color: #FFFFFF;
             font-family: 'Calibri', sans-serif;
             font-size: 10pt;
@@ -65,7 +65,7 @@
             text-transform: uppercase;
         }
 
-        /* Fila 2: Contenedor de Código y Total Regular */
+        /* Fila 2: Contenedor de Código + Total Regular (Alto: 0.66cm) */
         .fila-intermedia {
             width: 7.48cm;
             height: 0.66cm;
@@ -73,6 +73,7 @@
             clear: both;
         }
 
+        /* Código (Alto 0.66cm x Ancho 1.24cm, Calibri 8, Gris #A6A6A6, Texto Blanco en Negrita) */
         .bloque-codigo {
             float: left;
             width: 1.24cm;
@@ -83,10 +84,11 @@
             font-size: 8pt;
             font-weight: bold;
             text-align: center;
-            line-height: 0.66cm; /* Centrado vertical perfecto */
+            line-height: 0.66cm;
             overflow: hidden;
         }
 
+        /* Total Regular (Alto 0.66cm x Ancho 6.24cm, Calibri 8, Negro, Letra blanca en negrita + Prefijo) */
         .bloque-total-regular {
             float: left;
             width: 6.24cm;
@@ -97,11 +99,12 @@
             font-size: 8pt;
             font-weight: bold;
             text-align: center;
-            line-height: 0.66cm; /* Centrado vertical perfecto */
+            line-height: 0.66cm;
             overflow: hidden;
+            text-transform: uppercase;
         }
 
-        /* Fila 3: Total Descuento */
+        /* Fila 3: TOTAL DESCUENTO (Alto 1.21cm x Ancho 7.48cm, Calibri 21, Fondo #FFC000, Sin negrita + Prefijo OFERTA Q) */
         .bloque-total-descuento {
             width: 7.48cm;
             height: 1.21cm;
@@ -111,7 +114,7 @@
             font-size: 21pt;
             font-weight: normal;
             text-align: center;
-            line-height: 1.21cm; /* Centrado vertical perfecto */
+            line-height: 1.21cm;
             overflow: hidden;
             clear: both;
         }
@@ -123,7 +126,7 @@
             .header, .contenedor, .btn-pantalla-volver, .barra-flotante { display: none !important; }
             .impresion-contenedor { display: block !important; padding: 0 !important; margin: 0 !important; }
             .grid-etiquetas { page-break-inside: replace; margin: 0 auto; }
-            .ficha-matriz { page-break-inside: avoid; border: 0.3px dashed #000 !important; }
+            .ficha-matriz { page-break-inside: avoid; border: 1px solid #000000 !important; }
             @page { margin: 0.5cm; size: A4 portrait; }
         }
     </style>
@@ -132,16 +135,16 @@
 
     <header class="header">
         <div class="logo-mi">mi</div>
-        <h1>Impresión Matriz Xiaomi</h1>
+        <h1>Impresión de Ofertas Xiaomi</h1>
     </header>
 
     <div class="contenedor" id="vistaPrincipal">
-        <input type="text" id="txtBuscar" oninput="filtrar()" class="input-control" placeholder="Buscar artículo..." autocomplete="off">
+        <input type="text" id="txtBuscar" oninput="filtrar()" class="input-control" placeholder="Buscar artículo de oferta..." autocomplete="off">
         <div id="listaProductos" class="lista-items"></div>
     </div>
 
     <div class="barra-flotante" id="barraEcosistema">
-        <button onclick="imprimirSeleccionMasiva()" class="btn-principal">🖨️ Generar Hoja Completa (14 Etiquetas)</button>
+        <button onclick="imprimirSeleccionMasiva()" class="btn-principal">🖨️ Generar Hoja de Ofertas (14 por hoja)</button>
     </div>
 
     <div class="impresion-contenedor" id="capaImpresion"></div>
@@ -166,7 +169,7 @@
                     <input type="checkbox" class="chk-seleccion" ${isChecked ? 'checked' : ''} onclick="event.stopPropagation(); alternarSeleccion('${p.codigo}')">
                     <div style="flex:1; margin-left:5px;" onclick="alternarSeleccion('${p.codigo}')">
                         <div style="font-weight:bold; font-size:0.95rem;">${p.nombre}</div>
-                        <div style="font-size:0.75rem; color:#777;">Cód: ${p.codigo} | Reg + Plus: Q ${(reg + plus).toFixed(2)}</div>
+                        <div style="font-size:0.75rem; color:#777;">Cód: ${p.codigo} | Regular + Plus: Q ${(reg + plus).toFixed(2)}</div>
                     </div>
                 `;
                 container.appendChild(item);
@@ -179,8 +182,6 @@
             const index = itemsSeleccionados.findIndex(x => x.codigo === codigo);
             if (index > -1) itemsSeleccionados.splice(index, 1);
             else itemsSeleccionados.push(p);
-            
-            // Forzar refresco visual de los checkboxes
             renderizar(productos);
         }
 
@@ -188,14 +189,15 @@
             document.getElementById('barraEcosistema').style.display = itemsSeleccionados.length > 0 ? 'flex' : 'none';
         }
 
-        // CONSTRUCCIÓN EXACTA CON VARIABLES FINANCIERAS EN CENTÍMETROS
+        // GENERACIÓN DE ETIQUETA DE OFERTA SEGÚN ESPECIFICACIÓN EXACTA
         function generarHTMLEtiquetaMatriz(p) {
             const reg = Number(p.precio) || 0;
             const ofer = Number(p.oferta) || 0;
             const plus = Number(p.xiaomiPlus) || 0;
             
-            // Fórmulas matemáticas de las columnas del Excel
+            // Fórmulas matemáticas financieras de la matriz
             const totalRegularPlus = reg + plus;
+            // Si no hay precio de oferta cargado en Excel, usamos el regular como respaldo
             const totalDescPlus = ofer > 0 ? (ofer + plus) : totalRegularPlus; 
 
             return `
@@ -204,10 +206,10 @@
                     
                     <div class="fila-intermedia">
                         <div class="bloque-codigo">${p.codigo}</div>
-                        <div class="bloque-total-regular">Q ${totalRegularPlus.toFixed(2)}</div>
+                        <div class="bloque-total-regular">Precio Regular Q ${totalRegularPlus.toFixed(2)}</div>
                     </div>
                     
-                    <div class="bloque-total-descuento">Q ${totalDescPlus.toFixed(2)}</div>
+                    <div class="bloque-total-descuento">OFERTA Q ${totalDescPlus.toFixed(2)}</div>
                 </div>
             `;
         }
