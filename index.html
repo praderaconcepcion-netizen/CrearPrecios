@@ -21,7 +21,7 @@
 
         .contenedor { max-width: 550px; margin: 20px auto; padding: 0 15px; }
         .input-control { width: 100%; padding: 14px 16px; border: 2px solid #E2E2E2; border-radius: 14px; font-size: 0.95rem; background: var(--white); outline: none; margin-bottom: 15px; }
-        .input-control:focus { border-color: var(--xiaomi-orange); }
+        .input-control:focus { border-color: var(--xiaomi-orange); outline: none; }
         
         .lista-items { display: flex; flex-direction: column; gap: 10px; }
         .tarjeta-item { background: var(--white); padding: 15px; border-radius: 16px; border: 1px solid #EAEAEA; cursor: pointer; display: flex; align-items: center; gap: 15px; }
@@ -36,7 +36,7 @@
         .grid-etiquetas { display: grid; grid-template-columns: repeat(2, 7.50cm); justify-content: center; gap: 0cm; background: #fff; }
 
         /* =======================================================
-           NUEVAS DIMENSIONES SOLICITADAS: 7.50 cm x 2.94 cm
+           DIMENSIONES DE MARGEN EXACTAS: 7.50 cm x 2.94 cm
            ======================================================= */
         .ficha-matriz {
             width: 7.50cm;
@@ -50,7 +50,7 @@
             page-break-inside: avoid;
         }
 
-        /* Fila 1: Nombre (1.09cm de Alto, Calibri 10, Fondo Blanco, Centrado) */
+        /* Fila 1: Nombre (1.09cm de Alto, Calibri 10, Fondo Blanco, Centrado Total) */
         .bloque-nombre {
             width: 7.50cm;
             height: 1.09cm;
@@ -60,12 +60,12 @@
             color: #000000;
             font-weight: normal;
             
-            /* Centrado total horizontal y vertical del texto */
+            /* Centrado total horizontal y vertical */
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 0 4px;
+            padding: 0 6px;
             
             overflow: hidden;
             text-transform: uppercase;
@@ -94,7 +94,7 @@
             overflow: hidden;
         }
 
-        /* Total Regular (0.66cm de Alto x 6.26cm de Ancho [Ajustado para sumar 7.50cm], Calibri 8, Negro, Letra Blanca Negrita) */
+        /* Total Regular (0.66cm de Alto x 6.26cm de Ancho [Suma 7.50cm total], Calibri 8, Negro, Letra Blanca Negrita) */
         .bloque-total-regular {
             float: left;
             width: 6.26cm;
@@ -145,7 +145,7 @@
     </header>
 
     <div class="contenedor" id="vistaPrincipal">
-        <input type="text" id="txtBuscar" oninput="filtrar()" class="input-control" placeholder="Buscar artículo..." autocomplete="off">
+        <input type="text" id="txtBuscar" oninput="filtrar()" class="input-control" placeholder="Buscar artículo por nombre o código..." autocomplete="off">
         <div id="listaProductos" class="lista-items"></div>
     </div>
 
@@ -184,7 +184,7 @@
         }
 
         function alternarSeleccion(codigo) {
-            const p = productos.find(x => x.codigo === code => x.codigo === codigo);
+            const p = productos.find(x => x.codigo === codigo);
             const index = itemsSeleccionados.findIndex(x => x.codigo === codigo);
             if (index > -1) itemsSeleccionados.splice(index, 1);
             else itemsSeleccionados.push(p);
