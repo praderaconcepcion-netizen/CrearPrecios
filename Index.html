@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi | Buscador e Impresión de Precios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --xiaomi-orange: #FF6700;
+            --xiaomi-dark: #222222;
+            --xiaomi-grey: #666666;
+            --xiaomi-light: #F6F6F6;
+            --white: #FFFFFF;
+        }
+
+        * { box-sizing: border-box; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+        body { background-color: var(--xiaomi-light); color: var(--xiaomi-dark); padding-bottom: 40px; }
+
+        .header { background-color: var(--white); padding: 15px; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+        .logo-mi { width: 35px; height: 35px; background-color: var(--xiaomi-orange); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-size: 1.1rem; }
+        .header h1 { font-size: 1.2rem; font-weight: 700; }
+
+        .contenedor { max-width: 500px; margin: 20px auto; padding: 0 15px; }
+
+        .input-control { width: 100%; padding: 14px 16px; border: 1px solid #DDD; border-radius: 14px; font-size: 0.95rem; background: var(--white); outline: none; margin-bottom: 15px; transition: border 0.2s; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
+        .input-control:focus { border-color: var(--xiaomi-orange); }
+        
+        .lista-items { display: flex; flex-direction: column; gap: 10px; }
+        .tarjeta-item { background: var(--white); padding: 15px; border-radius: 16px; border: 1px solid #EAEAEA; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.01); }
+        .tarjeta-item:active { background: #FAFAFA; }
+        .badge-cat { font-size: 0.65rem; font-weight: 800; background: #EFEFEF; color: #555; padding: 2px 6px; border-radius: 6px; text-transform: uppercase; }
+
+        /* MODAL */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px); z-index: 100; justify-content: center; align-items: flex-end; }
+        .modal-body { background: var(--white); width: 100%; max-width: 500px; border-radius: 24px 24px 0 0; padding: 20px; box-shadow: 0 -4px 20px rgba(0,0,0,0.1); }
+        .modal-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
+        .btn-cerrar { background: #EFEFEF; border: none; width: 32px; height: 32px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; }
+        .btn-principal { width: 100%; background: var(--xiaomi-orange); color: var(--white); border: none; padding: 14px; border-radius: 14px; font-size: 0.95rem; font-weight: 700; cursor: pointer; }
+
+        /* IMPRESIÓN */
+        .ficha-impresion { width: 100%; max-width: 290px; margin: 30px auto; background: #fff; border: 2px dashed var(--xiaomi-orange); padding: 20px; border-radius: 10px; text-align: center; }
+        .ficha-impresion .f-titulo { font-size: 18px; font-weight: 800; color: var(--xiaomi-orange); margin-bottom: 12px; text-transform: uppercase; }
+        .ficha-impresion .f-specs { text-align: left; border-top: 1px solid #EEE; border-bottom: 1px solid #EEE; padding: 10px 0; margin-bottom: 12px; font-size: 12px; line-height: 1.5; color: #444; }
+        .ficha-impresion .f-precio-normal { font-size: 32px; font-weight: 800; color: var(--xiaomi-dark); }
+        .ficha-impresion .f-precio-oferta { font-size: 28px; font-weight: 800; color: var(--xiaomi-orange); }
+        .ficha-impresion .f-precio-antes { font-size: 13px; font-weight: 600; color: #888; text-decoration: line-through; margin-bottom: 2px; }
+
+        .btn-volver { display: block; width: 140px; margin: 20px auto; padding: 10px; background: #222; color: #fff; border: none; border-radius: 20px; font-weight: 600; text-align: center; cursor: pointer; font-size: 0.85rem; }
+
+        @media print {
+            body { background: #fff; padding: 0; margin: 0; }
+            .header, .contenedor, .modal, .btn-volver { display: none !important; }
+            #capaImpresion { display: block !important; }
+            .ficha-impresion { border: none; box-shadow: none; margin: 0 auto; page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-mi">mi</div>
+        <h1>Precios e Impresión</h1>
+    </header>
+
+    <div class="contenedor" id="vistaPrincipal">
+        <input type="text" id="txtBuscar" oninput="filtrar()" class="input-control" placeholder="Buscar por modelo o SKU..." autocomplete="off">
+        <div id="listaProductos" class="lista-items"></div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modalOpciones" onclick="if(event.target===this) cerrarModal()">
+        <div class="modal-body">
+            <div class="modal-header">
+                <div>
+                    <span id="mCat" class="badge-cat"></span>
+                    <h3 id="mNombre" style="font-size: 1.1rem; margin-top: 4px;"></h3>
+                    <p id="mCodigo" style="font-size: 0.75rem; color: #888;"></p>
+                </div>
+                <button class="btn-cerrar" onclick="cerrarModal()">&times;</button>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 10px;">
+                <button onclick="lanzarImpresion('normal')" class="btn-principal" style="background: #222;">📄 Etiqueta Normal</button>
+                <button onclick="lanzarImpresion('oferta')" class="btn-principal">🔥 Etiqueta Oferta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAPA DE IMPRESIÓN -->
+    <div id="capaImpresion" style="display: none;"></div>
+
+    <script src="productos.js"></script>
+    <script>
+        let seleccionado = null;
+
+        function renderizar(arr) {
+            const container = document.getElementById('listaProductos');
+            container.innerHTML = '';
+            
+            // Muestra los primeros 30 resultados para no saturar la pantalla
+            arr.slice(0, 30).forEach(p => {
+                const item = document.createElement('div');
+                item.className = 'tarjeta-item';
+                item.innerHTML = `
+                    <div>
+                        <span class="badge-cat">${p.categoria}</span>
+                        <div style="font-weight:600; font-size:0.95rem; margin-top:3px;">${p.nombre}</div>
+                        <div style="font-size:0.75rem; color:#888;">${p.codigo}</div>
+                    </div>
+                    <div style="font-weight:700; color:var(--xiaomi-orange);">Q ${Number(p.precio).toFixed(2)}</div>
+                `;
+                item.onclick = () => {
+                    seleccionado = p;
+                    document.getElementById('mCat').textContent = p.categoria;
+                    document.getElementById('mNombre').textContent = p.nombre;
+                    document.getElementById('mCodigo').textContent = `SKU: ${p.codigo}`;
+                    document.getElementById('modalOpciones').style.display = 'flex';
+                };
+                container.appendChild(item);
+            });
+        }
+
+        function filtrar() {
+            const query = document.getElementById('txtBuscar').value.toLowerCase().trim();
+            const filtrados = productos.filter(p => p.nombre.toLowerCase().includes(query) || p.codigo.toLowerCase().includes(query));
+            renderizar(filtrados);
+        }
+
+        function cerrarModal() { document.getElementById('modalOpciones').style.display = 'none'; }
+
+        function lanzarImpresion(tipo) {
+            if(!seleccionado) return;
+            const capa = document.getElementById('capaImpresion');
+            
+            const pNorm = (Number(seleccionado.precio)||0).toFixed(2);
+            const pOfer = (Number(seleccionado.precioOferta)||pNorm).toFixed(2);
+            
+            let specs = '';
+            if(seleccionado.spec1) specs += `• ${seleccionado.spec1}<br>`;
+            if(seleccionado.spec2) specs += `• ${seleccionado.spec2}<br>`;
+            if(seleccionado.spec3) specs += `• ${seleccionado.spec3}<br>`;
+
+            if(tipo === 'normal') {
+                capa.innerHTML = `
+                    <div class="ficha-impresion">
+                        <div class="f-titulo">${seleccionado.nombre}</div>
+                        <div class="f-specs">${specs || 'Garantía Oficial Xiaomi'}</div>
+                        <div class="f-precio-normal">Q ${pNorm}</div>
+                    </div>
+                    <button class="btn-volver" onclick="revertir()">⬅️ Volver</button>
+                `;
+            } else {
+                capa.innerHTML = `
+                    <div class="ficha-impresion" style="border-color:#222;">
+                        <div class="f-titulo" style="color:#222;">🔥 SUPER OFERTA 🔥</div>
+                        <div style="font-size:13px; font-weight:700; margin-bottom:10px;">${seleccionado.nombre}</div>
+                        <div class="f-specs">${specs || 'Garantía Oficial Xiaomi'}</div>
+                        <div class="f-precio-antes">Antes: Q ${pNorm}</div>
+                        <div class="f-precio-oferta">Q ${pOfer}</div>
+                    </div>
+                    <button class="btn-volver" onclick="revertir()">⬅️ Volver</button>
+                `;
+            }
+
+            document.getElementById('vistaPrincipal').style.display = 'none';
+            document.querySelector('.header').style.display = 'none';
+            cerrarModal();
+            capa.style.display = 'block';
+            setTimeout(() => { window.print(); }, 200);
+        }
+
+        function revertir() {
+            document.getElementById('capaImpresion').style.display = 'none';
+            document.getElementById('vistaPrincipal').style.display = 'block';
+            document.querySelector('.header').style.display = 'flex';
+        }
+
+        window.addEventListener('DOMContentLoaded', () => { renderizar(productos); });
+    </script>
+</body>
+</html>
