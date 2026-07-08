@@ -491,7 +491,7 @@ const productos = [
         "spec1": "AMOLED 6.67\\" 144Hz con IA",
         "spec2": "Doble Cámara Leica50 MP",
         "spec3": "5000 MAH",
-        "precio": 5499,
+        "precio": 0,
         "precioOferta": 4099
     }
     ,
@@ -502,7 +502,7 @@ const productos = [
         "spec1": "AMOLED 6.67\\" 144Hz con IA",
         "spec2": "Doble Cámara Leica50 MP",
         "spec3": "5000 MAH",
-        "precio": 6499,
+        "precio": 0,
         "precioOferta": 4999
     }
     ,
