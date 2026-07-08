@@ -33,14 +33,14 @@
 
         /* CONTENEDOR DE IMPRESIÓN MÚLTIPLE EN MALLA */
         .impresion-contenedor { display: none; background: #fff; padding: 0; }
-        .grid-etiquetas { display: grid; grid-template-columns: repeat(2, 7.48cm); justify-content: center; gap: 0cm; background: #fff; }
+        .grid-etiquetas { display: grid; grid-template-columns: repeat(2, 7.50cm); justify-content: center; gap: 0cm; background: #fff; }
 
         /* =======================================================
-           DIMENSIONES DE MARGEN EXACTAS SOLICITADAS: 7.48 x 2.96
+           NUEVAS DIMENSIONES SOLICITADAS: 7.50 cm x 2.94 cm
            ======================================================= */
         .ficha-matriz {
-            width: 7.48cm;
-            height: 2.96cm;
+            width: 7.50cm;
+            height: 2.94cm;
             border: 1px solid #000000; /* Margen negro rodeando la etiqueta */
             background: #FFFFFF;
             overflow: hidden;
@@ -52,7 +52,7 @@
 
         /* Fila 1: Nombre (1.09cm de Alto, Calibri 10, Fondo Blanco, Centrado) */
         .bloque-nombre {
-            width: 7.48cm;
+            width: 7.50cm;
             height: 1.09cm;
             background-color: #FFFFFF;
             font-family: 'Calibri', sans-serif;
@@ -73,7 +73,7 @@
 
         /* Fila 2: Contenedor Código + Total Regular (Alto: 0.66cm) */
         .fila-intermedia {
-            width: 7.48cm;
+            width: 7.50cm;
             height: 0.66cm;
             display: block;
             clear: both;
@@ -94,10 +94,10 @@
             overflow: hidden;
         }
 
-        /* Total Regular (0.66cm de Alto x 6.24cm de Ancho, Calibri 8, Negro, Letra Blanca Negrita) */
+        /* Total Regular (0.66cm de Alto x 6.26cm de Ancho [Ajustado para sumar 7.50cm], Calibri 8, Negro, Letra Blanca Negrita) */
         .bloque-total-regular {
             float: left;
-            width: 6.24cm;
+            width: 6.26cm;
             height: 0.66cm;
             background-color: #000000;
             color: #FFFFFF;
@@ -110,9 +110,9 @@
             text-transform: uppercase;
         }
 
-        /* Fila 3: TOTAL DESCUENTO (1.21cm de Alto x 7.48cm de Ancho, Calibri 21, Fondo #FFC000, Sin Negrita) */
+        /* Fila 3: TOTAL DESCUENTO (1.21cm de Alto x 7.50cm de Ancho, Calibri 21, Fondo #FFC000, Sin Negrita) */
         .bloque-total-descuento {
-            width: 7.48cm;
+            width: 7.50cm;
             height: 1.21cm;
             background-color: #FFC000;
             color: #000000;
@@ -141,7 +141,7 @@
 
     <header class="header">
         <div class="logo-mi">mi</div>
-        <h1>Impresión de Ofertas 7.48 x 2.96 cm</h1>
+        <h1>Impresión de Ofertas 7.50 x 2.94 cm</h1>
     </header>
 
     <div class="contenedor" id="vistaPrincipal">
@@ -184,7 +184,7 @@
         }
 
         function alternarSeleccion(codigo) {
-            const p = productos.find(x => x.codigo === codigo);
+            const p = productos.find(x => x.codigo === code => x.codigo === codigo);
             const index = itemsSeleccionados.findIndex(x => x.codigo === codigo);
             if (index > -1) itemsSeleccionados.splice(index, 1);
             else itemsSeleccionados.push(p);
