@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xiaomi | Buscador e Impresión de Precios</title>
+    <title>Xiaomi | Creador Oficial de Etiquetas de Precios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --xiaomi-orange: #FF6700;
-            --xiaomi-dark: #222222;
+            --xiaomi-dark: #111111;
             --xiaomi-grey: #666666;
-            --xiaomi-light: #F6F6F6;
+            --xiaomi-light: #F4F4F4;
             --white: #FFFFFF;
         }
 
@@ -21,40 +21,56 @@
 
         .header { background-color: var(--white); padding: 15px; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
         .logo-mi { width: 35px; height: 35px; background-color: var(--xiaomi-orange); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-size: 1.1rem; }
-        .header h1 { font-size: 1.2rem; font-weight: 700; }
+        .header h1 { font-size: 1.2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
 
-        .contenedor { max-width: 500px; margin: 20px auto; padding: 0 15px; }
-
-        .input-control { width: 100%; padding: 14px 16px; border: 1px solid #DDD; border-radius: 14px; font-size: 0.95rem; background: var(--white); outline: none; margin-bottom: 15px; transition: border 0.2s; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
-        .input-control:focus { border-color: var(--xiaomi-orange); }
+        .contenedor { max-width: 550px; margin: 20px auto; padding: 0 15px; }
+        .input-control { width: 100%; padding: 14px 16px; border: 2px solid #E2E2E2; border-radius: 14px; font-size: 0.95rem; background: var(--white); outline: none; margin-bottom: 15px; transition: all 0.2s; }
+        .input-control:focus { border-color: var(--xiaomi-orange); box-shadow: 0 0 0 3px rgba(255,103,0,0.1); }
         
         .lista-items { display: flex; flex-direction: column; gap: 10px; }
-        .tarjeta-item { background: var(--white); padding: 15px; border-radius: 16px; border: 1px solid #EAEAEA; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.01); }
-        .tarjeta-item:active { background: #FAFAFA; }
-        .badge-cat { font-size: 0.65rem; font-weight: 800; background: #EFEFEF; color: #555; padding: 2px 6px; border-radius: 6px; text-transform: uppercase; }
+        .tarjeta-item { background: var(--white); padding: 15px; border-radius: 16px; border: 1px solid #EAEAEA; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.01); transition: transform 0.1s; }
+        .tarjeta-item:active { transform: scale(0.98); background: #FAFAFA; }
+        
+        .badge-cat { font-size: 0.65rem; font-weight: 800; background: #EFEFEF; color: #555; padding: 3px 8px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
 
         /* MODAL */
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px); z-index: 100; justify-content: center; align-items: flex-end; }
-        .modal-body { background: var(--white); width: 100%; max-width: 500px; border-radius: 24px 24px 0 0; padding: 20px; box-shadow: 0 -4px 20px rgba(0,0,0,0.1); }
-        .modal-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
-        .btn-cerrar { background: #EFEFEF; border: none; width: 32px; height: 32px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; }
-        .btn-principal { width: 100%; background: var(--xiaomi-orange); color: var(--white); border: none; padding: 14px; border-radius: 14px; font-size: 0.95rem; font-weight: 700; cursor: pointer; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px); z-index: 100; justify-content: center; align-items: flex-end; }
+        .modal-body { background: var(--white); width: 100%; max-width: 550px; border-radius: 24px 24px 0 0; padding: 24px; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); }
+        .modal-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; border-bottom: 1px solid #EEE; padding-bottom: 15px; }
+        .btn-cerrar { background: #F0F0F0; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.3rem; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+        
+        .btn-principal { width: 100%; background: var(--xiaomi-orange); color: var(--white); border: none; padding: 14px; border-radius: 14px; font-size: 0.95rem; font-weight: 700; cursor: pointer; margin-top: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .btn-secundario { width: 100%; background: var(--xiaomi-dark); color: var(--white); border: none; padding: 14px; border-radius: 14px; font-size: 0.95rem; font-weight: 700; cursor: pointer; margin-top: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
 
-        /* IMPRESIÓN */
-        .ficha-impresion { width: 100%; max-width: 290px; margin: 30px auto; background: #fff; border: 2px dashed var(--xiaomi-orange); padding: 20px; border-radius: 10px; text-align: center; }
-        .ficha-impresion .f-titulo { font-size: 18px; font-weight: 800; color: var(--xiaomi-orange); margin-bottom: 12px; text-transform: uppercase; }
-        .ficha-impresion .f-specs { text-align: left; border-top: 1px solid #EEE; border-bottom: 1px solid #EEE; padding: 10px 0; margin-bottom: 12px; font-size: 12px; line-height: 1.5; color: #444; }
-        .ficha-impresion .f-precio-normal { font-size: 32px; font-weight: 800; color: var(--xiaomi-dark); }
-        .ficha-impresion .f-precio-oferta { font-size: 28px; font-weight: 800; color: var(--xiaomi-orange); }
-        .ficha-impresion .f-precio-antes { font-size: 13px; font-weight: 600; color: #888; text-decoration: line-through; margin-bottom: 2px; }
+        /* CONTENEDOR DE IMPRESIÓN */
+        .impresion-contenedor { display: none; background: #fff; padding: 0; margin: 0; }
+        .ficha-oficial { width: 100%; max-width: 380px; margin: 40px auto; background: #FFFFFF; border: 3px solid var(--xiaomi-dark); padding: 25px; box-sizing: border-box; position: relative; font-family: 'Inter', sans-serif; }
+        
+        /* ECOSISTEMA */
+        .eco-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--xiaomi-dark); padding-bottom: 10px; margin-bottom: 15px; }
+        .eco-logo { font-size: 24px; font-weight: 800; color: var(--white); background: var(--xiaomi-orange); padding: 2px 10px; border-radius: 6px; }
+        .eco-titulo { font-size: 20px; font-weight: 800; text-transform: uppercase; color: var(--xiaomi-dark); line-height: 1.2; margin-bottom: 15px; }
+        .eco-specs-list { font-size: 13px; color: #333; line-height: 1.6; margin-bottom: 20px; text-align: left; }
+        .eco-precio-regular { font-size: 38px; font-weight: 800; text-align: center; color: var(--xiaomi-dark); margin-top: 15px; }
+        .eco-oferta-container { display: flex; justify-content: space-between; align-items: center; background: #FFF3E0; padding: 10px 15px; border-radius: 8px; margin-top: 15px; border: 1px dashed var(--xiaomi-orange); }
+        
+        /* TECNOLÓGICAS (TELÉFONO, RELOJ, AUDÍFONOS) */
+        .tech-tag { position: absolute; top: 0; right: 25px; background: var(--xiaomi-dark); color: #fff; font-size: 10px; font-weight: 800; padding: 4px 10px; border-radius: 0 0 6px 6px; text-transform: uppercase; letter-spacing: 1px; }
+        .tech-titulo { font-size: 22px; font-weight: 800; text-transform: uppercase; margin-top: 10px; margin-bottom: 15px; line-height: 1.2; border-bottom: 2px solid var(--xiaomi-orange); padding-bottom: 8px; }
+        .box-spec-tecnica { display: flex; flex-direction: column; gap: 8px; margin-bottom: 25px; background: #F9F9F9; padding: 12px; border-radius: 8px; border-left: 4px solid var(--xiaomi-orange); }
+        .spec-line { font-size: 13px; font-weight: 600; color: #222; }
 
-        .btn-volver { display: block; width: 140px; margin: 20px auto; padding: 10px; background: #222; color: #fff; border: none; border-radius: 20px; font-weight: 600; text-align: center; cursor: pointer; font-size: 0.85rem; }
+        .f-antes { font-size: 14px; font-weight: 600; color: #777; text-decoration: line-through; }
+        .f-ahora { font-size: 42px; font-weight: 800; color: var(--xiaomi-orange); line-height: 1; }
+        .f-sku-footer { text-align: right; font-size: 10px; color: #888; font-weight: 700; text-transform: uppercase; margin-top: 20px; border-top: 1px solid #EEE; padding-top: 8px; }
+
+        .btn-pantalla-volver { display: block; width: 160px; margin: 30px auto; padding: 12px; background: #111; color: #fff; border: none; border-radius: 25px; font-weight: 700; text-align: center; cursor: pointer; font-size: 0.85rem; text-transform: uppercase; }
 
         @media print {
-            body { background: #fff; padding: 0; margin: 0; }
-            .header, .contenedor, .modal, .btn-volver { display: none !important; }
-            #capaImpresion { display: block !important; }
-            .ficha-impresion { border: none; box-shadow: none; margin: 0 auto; page-break-inside: avoid; }
+            body { background: #FFFFFF; padding: 0; margin: 0; }
+            .header, .contenedor, .modal, .btn-pantalla-volver { display: none !important; }
+            .impresion-contenedor { display: block !important; }
+            .ficha-oficial { border: 3px solid #000 !important; box-shadow: none !important; margin: 0 auto !important; page-break-inside: avoid; position: relative !important; }
         }
     </style>
 </head>
@@ -62,11 +78,11 @@
 
     <header class="header">
         <div class="logo-mi">mi</div>
-        <h1>Precios e Impresión</h1>
+        <h1>Creador de Etiquetas de Precios</h1>
     </header>
 
     <div class="contenedor" id="vistaPrincipal">
-        <input type="text" id="txtBuscar" oninput="filtrar()" class="input-control" placeholder="Buscar por modelo o SKU..." autocomplete="off">
+        <input type="text" id="txtBuscar" oninput="filtrar()" class="input-control" placeholder="Buscar modelo o SKU..." autocomplete="off">
         <div id="listaProductos" class="lista-items"></div>
     </div>
 
@@ -75,19 +91,20 @@
             <div class="modal-header">
                 <div>
                     <span id="mCat" class="badge-cat"></span>
-                    <h3 id="mNombre" style="font-size: 1.1rem; margin-top: 4px;"></h3>
-                    <p id="mCodigo" style="font-size: 0.75rem; color: #888;"></p>
+                    <h3 id="mNombre" style="font-size: 1.2rem; margin-top: 6px; font-weight:800;"></h3>
+                    <p id="mCodigo" style="font-size: 0.8rem; color: #777; font-weight:500;"></p>
                 </div>
                 <button class="btn-cerrar" onclick="cerrarModal()">&times;</button>
             </div>
-            <div style="display: flex; gap: 10px; margin-top: 10px;">
-                <button onclick="lanzarImpresion('normal')" class="btn-principal" style="background: #222;">📄 Etiqueta Normal</button>
-                <button onclick="lanzarImpresion('oferta')" class="btn-principal">🔥 Etiqueta Oferta</button>
+            
+            <div style="margin-top: 10px;">
+                <h4 style="font-size:0.85rem; text-transform:uppercase; color:var(--xiaomi-grey); font-weight:700; margin-bottom:10px;">Generar Ficha de Precio:</h4>
+                <div id="bloqueBotonesImpresion"></div>
             </div>
         </div>
     </div>
 
-    <div id="capaImpresion" style="display: none;"></div>
+    <div class="impresion-contenedor" id="capaImpresion"></div>
 
     <script src="productos.js"></script>
     <script>
@@ -97,27 +114,49 @@
             const container = document.getElementById('listaProductos');
             container.innerHTML = '';
             
-            // Muestra los primeros 30 resultados para no saturar la pantalla inicialmente
-            arr.slice(0, 30).forEach(p => {
+            arr.slice(0, 40).forEach(p => {
                 const item = document.createElement('div');
                 item.className = 'tarjeta-item';
                 item.innerHTML = `
                     <div>
                         <span class="badge-cat">${p.categoria}</span>
-                        <div style="font-weight:600; font-size:0.95rem; margin-top:3px;">${p.nombre}</div>
-                        <div style="font-size:0.75rem; color:#888;">${p.codigo}</div>
+                        <div style="font-weight:700; font-size:1rem; margin-top:5px; color:var(--xiaomi-dark);">${p.nombre}</div>
+                        <div style="font-size:0.75rem; color:#777; font-weight:500;">SKU: ${p.codigo}</div>
                     </div>
-                    <div style="font-weight:700; color:var(--xiaomi-orange);">Q ${Number(p.precio).toFixed(2)}</div>
+                    <div style="text-align:right;">
+                        <div style="font-weight:800; color:var(--xiaomi-dark); font-size:1.05rem;">Q ${Number(p.precio).toFixed(2)}</div>
+                        ${p.precioOferta > 0 ? `<div style="font-weight:700; color:var(--xiaomi-orange); font-size:0.85rem;">Oferta: Q ${Number(p.precioOferta).toFixed(2)}</div>` : ''}
+                    </div>
                 `;
-                item.onclick = () => {
-                    seleccionado = p;
-                    document.getElementById('mCat').textContent = p.categoria;
-                    document.getElementById('mNombre').textContent = p.nombre;
-                    document.getElementById('mCodigo').textContent = `SKU: ${p.codigo}`;
-                    document.getElementById('modalOpciones').style.display = 'flex';
-                };
+                item.onclick = () => abrirDetalle(p);
                 container.appendChild(item);
             });
+        }
+
+        function abrirDetalle(p) {
+            seleccionado = p;
+            document.getElementById('mCat').textContent = p.categoria;
+            document.getElementById('mNombre').textContent = p.nombre;
+            document.getElementById('mCodigo').textContent = `SKU: ${p.codigo}`;
+
+            const btnBloque = document.getElementById('bloqueBotonesImpresion');
+            btnBloque.innerHTML = '';
+
+            // Clasificación limpia de las 5 etiquetas exactas solicitadas
+            if (p.categoria === 'ecosistema') {
+                btnBloque.innerHTML = `
+                    <button onclick="imprimirEtiqueta('eco_normal')" class="btn-secundario">📄 Precio Normal Ecosistema</button>
+                    <button onclick="imprimirEtiqueta('eco_oferta')" class="btn-principal">🔥 Precio Oferta Ecosistema</button>
+                `;
+            } else if (p.categoria === 'telefono') {
+                btnBloque.innerHTML = `<button onclick="imprimirEtiqueta('tech_auto')" class="btn-principal">📱 Generar Ficha de Teléfono</button>`;
+            } else if (p.categoria === 'reloj') {
+                btnBloque.innerHTML = `<button onclick="imprimirEtiqueta('tech_auto')" class="btn-principal">⌚ Generar Ficha de Reloj</button>`;
+            } else if (p.categoria === 'audifonos') {
+                btnBloque.innerHTML = `<button onclick="imprimirEtiqueta('tech_auto')" class="btn-principal">🎧 Generar Ficha de Audífonos</button>`;
+            }
+
+            document.getElementById('modalOpciones').style.display = 'flex';
         }
 
         function filtrar() {
@@ -128,48 +167,83 @@
 
         function cerrarModal() { document.getElementById('modalOpciones').style.display = 'none'; }
 
-        function lanzarImpresion(tipo) {
+        function imprimirEtiqueta(tipo) {
             if(!seleccionado) return;
             const capa = document.getElementById('capaImpresion');
             
             const pNorm = (Number(seleccionado.precio)||0).toFixed(2);
             const pOfer = (Number(seleccionado.precioOferta)||pNorm).toFixed(2);
             
-            let specs = '';
-            if(seleccionado.spec1) specs += `• ${seleccionado.spec1}<br>`;
-            if(seleccionado.spec2) specs += `• ${seleccionado.spec2}<br>`;
-            if(seleccionado.spec3) specs += `• ${seleccionado.spec3}<br>`;
+            let htmlResultado = '';
 
-            if(tipo === 'normal') {
-                capa.innerHTML = `
-                    <div class="ficha-impresion">
-                        <div class="f-titulo">${seleccionado.nombre}</div>
-                        <div class="f-specs">${specs || 'Garantía Oficial Xiaomi'}</div>
-                        <div class="f-precio-normal">Q ${pNorm}</div>
-                    </div>
-                    <button class="btn-volver" onclick="revertir()">⬅️ Volver</button>
-                `;
-            } else {
-                capa.innerHTML = `
-                    <div class="ficha-impresion" style="border-color:#222;">
-                        <div class="f-titulo" style="color:#222;">🔥 SUPER OFERTA 🔥</div>
-                        <div style="font-size:13px; font-weight:700; margin-bottom:10px;">${seleccionado.nombre}</div>
-                        <div class="f-specs">${specs || 'Garantía Oficial Xiaomi'}</div>
-                        <div class="f-precio-antes">Antes: Q ${pNorm}</div>
-                        <div class="f-precio-oferta">Q ${pOfer}</div>
-                    </div>
-                    <button class="btn-volver" onclick="revertir()">⬅️ Volver</button>
-                `;
+            if (tipo === 'eco_normal') {
+                htmlResultado = `
+                    <div class="ficha-oficial">
+                        <div class="eco-header"><div class="eco-logo">mi</div><div style="font-size:11px; font-weight:700; color:var(--xiaomi-grey);">ECOSISTEMA</div></div>
+                        <div class="eco-titulo">${seleccionado.nombre}</div>
+                        <div class="eco-specs-list">
+                            ${seleccionado.spec1 ? `• ${seleccionado.spec1}<br>` : ''}
+                            ${seleccionado.spec2 ? `• ${seleccionado.spec2}<br>` : ''}
+                            ${seleccionado.spec3 ? `• ${seleccionado.spec3}<br>` : ''}
+                        </div>
+                        <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:#555;">Precio Regular:</div>
+                        <div class="eco-precio-regular">Q ${pNorm}</div>
+                        <div class="f-sku-footer">SKU: ${seleccionado.codigo}</div>
+                    </div>`;
+            } 
+            else if (tipo === 'eco_oferta') {
+                htmlResultado = `
+                    <div class="ficha-oficial" style="border-color:var(--xiaomi-orange);">
+                        <div class="eco-header"><div class="eco-logo">mi</div><div style="font-size:11px; font-weight:800; color:var(--xiaomi-orange);">OFERTA</div></div>
+                        <div class="eco-titulo">${seleccionado.nombre}</div>
+                        <div class="eco-specs-list">
+                            ${seleccionado.spec1 ? `• ${seleccionado.spec1}<br>` : ''}
+                            ${seleccionado.spec2 ? `• ${seleccionado.spec2}<br>` : ''}
+                            ${seleccionado.spec3 ? `• ${seleccionado.spec3}<br>` : ''}
+                        </div>
+                        <div class="eco-oferta-container">
+                            <div>
+                                <div class="f-antes">Antes: Q ${pNorm}</div>
+                                <div style="font-size:12px; font-weight:800; color:var(--xiaomi-orange); text-transform:uppercase;">Especial:</div>
+                            </div>
+                            <div class="f-ahora">Q ${pOfer}</div>
+                        </div>
+                        <div class="f-sku-footer">SKU: ${seleccionado.codigo}</div>
+                    </div>`;
+            } 
+            else if (tipo === 'tech_auto') {
+                htmlResultado = `
+                    <div class="ficha-oficial">
+                        <div class="tech-tag">${seleccionado.categoria}</div>
+                        <div style="font-size:24px; font-weight:900; color:var(--xiaomi-orange); margin-bottom:5px;">mi</div>
+                        <div class="tech-titulo">${seleccionado.nombre}</div>
+                        <div class="box-spec-tecnica">
+                            ${seleccionado.spec1 ? `<div class="spec-line">• ${seleccionado.spec1}</div>` : ''}
+                            ${seleccionado.spec2 ? `<div class="spec-line">• ${seleccionado.spec2}</div>` : ''}
+                            ${seleccionado.spec3 ? `<div class="spec-line">• ${seleccionado.spec3}</div>` : ''}
+                        </div>
+                        <div style="display:flex; justify-content:space-between; align-items:center; background:#F5F5F5; padding:15px; border-radius:10px;">
+                            <div>
+                                ${seleccionado.precioOferta > 0 ? `<div class="f-antes">Antes: Q ${pNorm}</div>` : `<div style="font-size:11px; font-weight:700; color:#666; text-transform:uppercase;">Precio Regular:</div>`}
+                                <div style="font-size:12px; font-weight:800; text-transform:uppercase; color:var(--xiaomi-dark);">Total:</div>
+                            </div>
+                            <div class="f-ahora" style="${seleccionado.precioOferta > 0 ? '' : 'color:var(--xiaomi-dark);'}">Q ${seleccionado.precioOferta > 0 ? pOfer : pNorm}</div>
+                        </div>
+                        <div class="f-sku-footer">SKU: ${seleccionado.codigo}</div>
+                    </div>`;
             }
 
+            capa.innerHTML = htmlResultado + `<button class="btn-pantalla-volver" onclick="revertirModoImpresora()">⬅️ Regresar</button>`;
+            
             document.getElementById('vistaPrincipal').style.display = 'none';
             document.querySelector('.header').style.display = 'none';
             cerrarModal();
             capa.style.display = 'block';
-            setTimeout(() => { window.print(); }, 200);
+            
+            setTimeout(() => { window.print(); }, 250);
         }
 
-        function revertir() {
+        function revertirModoImpresora() {
             document.getElementById('capaImpresion').style.display = 'none';
             document.getElementById('vistaPrincipal').style.display = 'block';
             document.querySelector('.header').style.display = 'flex';
