@@ -1,10 +1,10 @@
-// Base de Datos Unificada para Generador de Etiquetas Xiaomi
+Ôªø// Base de Datos Unificada para Generador de Fichas Xiaomi
 const productos = [
     {
         "codigo": "7393",
         "nombre": "REDMI NOTE 12 PRO 5G",
         "categoria": "telefono",
-        "spec1": "6.67î FHD+ DotDisplay",
+        "spec1": "6.67‚Äù FHD+ DotDisplay",
         "spec2": "50 MP IMX766 con OIS",
         "spec3": "5000 MAH",
         "precio": 3599,
@@ -15,7 +15,7 @@ const productos = [
         "codigo": "7392",
         "nombre": "REDMI NOTE 12 PRO 5G",
         "categoria": "telefono",
-        "spec1": "6.67î FHD+ DotDisplay",
+        "spec1": "6.67‚Äù FHD+ DotDisplay",
         "spec2": "50 MP IMX766 con OIS",
         "spec3": "5000 MAH",
         "precio": 3599,
@@ -26,7 +26,7 @@ const productos = [
         "codigo": "7389",
         "nombre": "REDMI NOTE 12 PRO 5G",
         "categoria": "telefono",
-        "spec1": "6.67î FHD+ DotDisplay",
+        "spec1": "6.67‚Äù FHD+ DotDisplay",
         "spec2": "50 MP IMX766 con OIS",
         "spec3": "5000 MAH",
         "precio": 3599,
@@ -48,8 +48,8 @@ const productos = [
         "codigo": "7397",
         "nombre": "Redmi 12C + Combo Fan",
         "categoria": "telefono",
-        "spec1": "Dot Drop de 6,71\\"",
-        "spec2": "C·mara principal de 50 MP f/1,8",
+        "spec1": "Dot Drop de 6,71\"",
+        "spec2": "C√°mara principal de 50 MP f/1,8",
         "spec3": "5000 MAH",
         "precio": 1999,
         "precioOferta": 1399
@@ -59,8 +59,8 @@ const productos = [
         "codigo": "7404",
         "nombre": "REDMI 12C",
         "categoria": "telefono",
-        "spec1": "Dot Drop de 6,71\\"",
-        "spec2": "C·mara principal de 50 MP f/1,8",
+        "spec1": "Dot Drop de 6,71\"",
+        "spec2": "C√°mara principal de 50 MP f/1,8",
         "spec3": "5000 MAH",
         "precio": 1499,
         "precioOferta": 1099
@@ -70,8 +70,8 @@ const productos = [
         "codigo": "7398",
         "nombre": "REDMI 12C",
         "categoria": "telefono",
-        "spec1": "Dot Drop de 6,71\\"",
-        "spec2": "C·mara principal de 50 MP f/1,8",
+        "spec1": "Dot Drop de 6,71\"",
+        "spec2": "C√°mara principal de 50 MP f/1,8",
         "spec3": "5000 MAH",
         "precio": 1499,
         "precioOferta": 1099
@@ -81,8 +81,8 @@ const productos = [
         "codigo": "7403",
         "nombre": "REDMI 12C",
         "categoria": "telefono",
-        "spec1": "Dot Drop de 6,71\\"",
-        "spec2": "C·mara principal de 50 MP f/1,8",
+        "spec1": "Dot Drop de 6,71\"",
+        "spec2": "C√°mara principal de 50 MP f/1,8",
         "spec3": "5000 MAH",
         "precio": 1499,
         "precioOferta": 1099
@@ -92,8 +92,8 @@ const productos = [
         "codigo": "7399",
         "nombre": "REDMI 12C",
         "categoria": "telefono",
-        "spec1": "Dot Drop de 6,71\\"",
-        "spec2": "C·mara principal de 50 MP f/1,8",
+        "spec1": "Dot Drop de 6,71\"",
+        "spec2": "C√°mara principal de 50 MP f/1,8",
         "spec3": "5000 MAH",
         "precio": 1499,
         "precioOferta": 1099
@@ -103,8 +103,8 @@ const productos = [
         "codigo": "6936",
         "nombre": "REDMI A1",
         "categoria": "telefono",
-        "spec1": "6.52î DotDisplay FHD+",
-        "spec2": "8 MP f/2,2 C·mara principal",
+        "spec1": "6.52‚Äù DotDisplay FHD+",
+        "spec2": "8 MP f/2,2 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 549,
         "precioOferta": 0
@@ -125,8 +125,8 @@ const productos = [
         "codigo": "7396",
         "nombre": "REDMI A2",
         "categoria": "telefono",
-        "spec1": "6.52î DotDisplay FHD+",
-        "spec2": "8 MP f/2,2 C·mara principal",
+        "spec1": "6.52‚Äù DotDisplay FHD+",
+        "spec2": "8 MP f/2,2 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 549,
         "precioOferta": 0
@@ -136,8 +136,8 @@ const productos = [
         "codigo": "7395",
         "nombre": "REDMI A2",
         "categoria": "telefono",
-        "spec1": "6.52î DotDisplay FHD+",
-        "spec2": "8 MP f/2,2 C·mara principal",
+        "spec1": "6.52‚Äù DotDisplay FHD+",
+        "spec2": "8 MP f/2,2 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 549,
         "precioOferta": 0
@@ -147,8 +147,8 @@ const productos = [
         "codigo": "7387",
         "nombre": "Redmi Note 12",
         "categoria": "telefono",
-        "spec1": "6.67î FHD+ DotDisplay",
-        "spec2": "50MP f/1,8 C·mara principal",
+        "spec1": "6.67‚Äù FHD+ DotDisplay",
+        "spec2": "50MP f/1,8 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 2899,
         "precioOferta": 1799
@@ -158,8 +158,8 @@ const productos = [
         "codigo": "7386",
         "nombre": "REDMI NOTE 12 4G",
         "categoria": "telefono",
-        "spec1": "6.67î FHD+ DotDisplay",
-        "spec2": "50MP f/1,8 C·mara principal",
+        "spec1": "6.67‚Äù FHD+ DotDisplay",
+        "spec2": "50MP f/1,8 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 2199,
         "precioOferta": 1199
@@ -169,8 +169,8 @@ const productos = [
         "codigo": "7388",
         "nombre": "Redmi Note 12",
         "categoria": "telefono",
-        "spec1": "6.67î FHD+ DotDisplay",
-        "spec2": "50MP f/1,8 C·mara principal",
+        "spec1": "6.67‚Äù FHD+ DotDisplay",
+        "spec2": "50MP f/1,8 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 2899,
         "precioOferta": 1699
@@ -180,8 +180,8 @@ const productos = [
         "codigo": "7010",
         "nombre": "REDMI PAD",
         "categoria": "telefono",
-        "spec1": "10,61\\" FHD IPS",
-        "spec2": "8MP f/2,0 C·mara principal",
+        "spec1": "10,61\" FHD IPS",
+        "spec2": "8MP f/2,0 C√°mara principal",
         "spec3": "8000 MAH",
         "precio": 1599,
         "precioOferta": 1999
@@ -191,8 +191,8 @@ const productos = [
         "codigo": "7081",
         "nombre": "REDMI PAD",
         "categoria": "telefono",
-        "spec1": "10,61\\" FHD IPS",
-        "spec2": "8MP f/2,0 C·mara principal",
+        "spec1": "10,61\" FHD IPS",
+        "spec2": "8MP f/2,0 C√°mara principal",
         "spec3": "8000 MAH",
         "precio": 0,
         "precioOferta": 0
@@ -202,8 +202,8 @@ const productos = [
         "codigo": "7080",
         "nombre": "REDMI PAD",
         "categoria": "telefono",
-        "spec1": "10,61\\" Brillo 400 nits",
-        "spec2": "8MP f/2,0 C·mara principal",
+        "spec1": "10,61\" Brillo 400 nits",
+        "spec2": "8MP f/2,0 C√°mara principal",
         "spec3": "8000 MAH",
         "precio": 1599,
         "precioOferta": 1999
@@ -213,8 +213,8 @@ const productos = [
         "codigo": "7532",
         "nombre": "NOTE 12S",
         "categoria": "telefono",
-        "spec1": "6.43î FHD+ DotDisplay",
-        "spec2": "108 MP f/1,9 C·mara principal",
+        "spec1": "6.43‚Äù FHD+ DotDisplay",
+        "spec2": "108 MP f/1,9 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 2599,
         "precioOferta": 1899
@@ -224,8 +224,8 @@ const productos = [
         "codigo": "7533",
         "nombre": "Redmi Note 12S + Combo Fan",
         "categoria": "telefono",
-        "spec1": "6.43î FHD+ DotDisplay",
-        "spec2": "108 MP f/1,9 C·mara principal",
+        "spec1": "6.43‚Äù FHD+ DotDisplay",
+        "spec2": "108 MP f/1,9 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 3899,
         "precioOferta": 2599
@@ -235,8 +235,8 @@ const productos = [
         "codigo": "7320",
         "nombre": "POCO X5 5G",
         "categoria": "telefono",
-        "spec1": "6.67\\" FHD+ DotDisplay",
-        "spec2": "48 MP f/1,8 C·mara principal",
+        "spec1": "6.67\" FHD+ DotDisplay",
+        "spec2": "48 MP f/1,8 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 0,
         "precioOferta": 0
@@ -246,8 +246,8 @@ const productos = [
         "codigo": "7756",
         "nombre": "XIAOMI PAD 6",
         "categoria": "telefono",
-        "spec1": "11\\" IPS",
-        "spec2": "13 MP f/2,2 C·mara Principal",
+        "spec1": "11\" IPS",
+        "spec2": "13 MP f/2,2 C√°mara Principal",
         "spec3": "8840 MAH",
         "precio": 4499,
         "precioOferta": 3799
@@ -257,8 +257,8 @@ const productos = [
         "codigo": "7959",
         "nombre": "XIAOMI 13T",
         "categoria": "telefono",
-        "spec1": "6.67î AMOLED FHD+",
-        "spec2": "50MP f/1,9 C·mara principal",
+        "spec1": "6.67‚Äù AMOLED FHD+",
+        "spec2": "50MP f/1,9 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 4999,
         "precioOferta": 4799
@@ -268,8 +268,8 @@ const productos = [
         "codigo": "7801",
         "nombre": "Redmi Note 12 + Combo Mother Day",
         "categoria": "telefono",
-        "spec1": "6.67î FHD+ DotDisplay",
-        "spec2": "50MP f/1,8 C·mara principal",
+        "spec1": "6.67‚Äù FHD+ DotDisplay",
+        "spec2": "50MP f/1,8 C√°mara principal",
         "spec3": "5000 MAH",
         "precio": 2899,
         "precioOferta": 1699
@@ -279,8 +279,8 @@ const productos = [
         "codigo": "8185",
         "nombre": "Redmi 13C",
         "categoria": "telefono",
-        "spec1": "6.74\\" LCD HD+",
-        "spec2": "C·mara principal de 50 MP",
+        "spec1": "6.74\" LCD HD+",
+        "spec2": "C√°mara principal de 50 MP",
         "spec3": "5000 MAH",
         "precio": 1999,
         "precioOferta": 1299
@@ -291,7 +291,7 @@ const productos = [
         "nombre": "REDMI 12",
         "categoria": "telefono",
         "spec1": "LCD de 6,79 pulgadas",
-        "spec2": "C·mara principal 50 MP f/1,8",
+        "spec2": "C√°mara principal 50 MP f/1,8",
         "spec3": "5000 MAH",
         "precio": 1999,
         "precioOferta": 1199
@@ -302,7 +302,7 @@ const productos = [
         "nombre": "Redmi Pad SE",
         "categoria": "telefono",
         "spec1": "FHD+ de 11''",
-        "spec2": "C·mara trasera de 8 MP",
+        "spec2": "C√°mara trasera de 8 MP",
         "spec3": "8000 MAH",
         "precio": 1999,
         "precioOferta": 1699
@@ -312,8 +312,8 @@ const productos = [
         "codigo": "8236",
         "nombre": "Redmi Note 13",
         "categoria": "telefono",
-        "spec1": "6.67\\" AMOLED",
-        "spec2": "C·mara principal 108 MP (f/1.65)",
+        "spec1": "6.67\" AMOLED",
+        "spec2": "C√°mara principal 108 MP (f/1.65)",
         "spec3": "5000 MAH",
         "precio": 2399,
         "precioOferta": 1499
@@ -323,8 +323,8 @@ const productos = [
         "codigo": "8242",
         "nombre": "Redmi Note 13 Pro Plus",
         "categoria": "telefono",
-        "spec1": "6.67\\" AMOLED",
-        "spec2": "C·mara principal 200 MP f/1,7 OIS",
+        "spec1": "6.67\" AMOLED",
+        "spec2": "C√°mara principal 200 MP f/1,7 OIS",
         "spec3": "5000 MAH",
         "precio": 4399,
         "precioOferta": 3299
@@ -334,8 +334,8 @@ const productos = [
         "codigo": "8240",
         "nombre": "Redmi Note 13 Pro 4G",
         "categoria": "telefono",
-        "spec1": "6.67\\" AMOLED",
-        "spec2": "C·mara principal 200 MP (f/1.65)",
+        "spec1": "6.67\" AMOLED",
+        "spec2": "C√°mara principal 200 MP (f/1.65)",
         "spec3": "5000 MAH",
         "precio": 2899,
         "precioOferta": 1999
@@ -345,8 +345,8 @@ const productos = [
         "codigo": "8241",
         "nombre": "Redmi Note 13 Pro 4G",
         "categoria": "telefono",
-        "spec1": "6.67\\" AMOLED",
-        "spec2": "C·mara principal 200 MP (f/1.65)",
+        "spec1": "6.67\" AMOLED",
+        "spec2": "C√°mara principal 200 MP (f/1.65)",
         "spec3": "5000 MAH",
         "precio": 2899,
         "precioOferta": 1999
@@ -357,7 +357,7 @@ const productos = [
         "nombre": "REDMI A3",
         "categoria": "telefono",
         "spec1": "6.67 Dot Drop",
-        "spec2": "C·mara principal 8 MP (f/2,0)",
+        "spec2": "C√°mara principal 8 MP (f/2,0)",
         "spec3": "5000 MAH",
         "precio": 1199,
         "precioOferta": 699
@@ -368,7 +368,7 @@ const productos = [
         "nombre": "Redmi 12 + Combo Mother Day",
         "categoria": "telefono",
         "spec1": "6.79 IPS LCD",
-        "spec2": "C·mara principal 50 MP (f/1,8)",
+        "spec2": "C√°mara principal 50 MP (f/1,8)",
         "spec3": "5000 MAH",
         "precio": 2299,
         "precioOferta": 1999
@@ -376,10 +376,10 @@ const productos = [
     ,
     {
         "codigo": "8772",
-        "nombre": "Xiaomi 14 Ultra + 2 AÒos GarantÌa",
+        "nombre": "Xiaomi 14 Ultra + 2 A√±os Garant√≠a",
         "categoria": "telefono",
-        "spec1": "AMOLED WQHD+ de 6,73\\"",
-        "spec2": "C·mara Leica 50 MP F1.63-F4.0",
+        "spec1": "AMOLED WQHD+ de 6,73\"",
+        "spec2": "C√°mara Leica 50 MP F1.63-F4.0",
         "spec3": "5000 MAH",
         "precio": 11599,
         "precioOferta": 10999
@@ -387,10 +387,10 @@ const productos = [
     ,
     {
         "codigo": "8658",
-        "nombre": "Xiaomi 14 Ultra + 2 AÒos GarantÌa",
+        "nombre": "Xiaomi 14 Ultra + 2 A√±os Garant√≠a",
         "categoria": "telefono",
-        "spec1": "AMOLED WQHD+ de 6,73\\"",
-        "spec2": "C·mara Leica 50 MP F1.63-F4.0",
+        "spec1": "AMOLED WQHD+ de 6,73\"",
+        "spec2": "C√°mara Leica 50 MP F1.63-F4.0",
         "spec3": "5000 MAH",
         "precio": 11599,
         "precioOferta": 10999
@@ -400,8 +400,8 @@ const productos = [
         "codigo": "8805",
         "nombre": "REDMI PAD PRO",
         "categoria": "telefono",
-        "spec1": "2,5K de 120 Hz y 12,1\\"",
-        "spec2": "C·mara principal 8 MP (f/2,8)",
+        "spec1": "2,5K de 120 Hz y 12,1\"",
+        "spec2": "C√°mara principal 8 MP (f/2,8)",
         "spec3": "10000 MAH",
         "precio": 2899,
         "precioOferta": 2499
@@ -411,8 +411,8 @@ const productos = [
         "codigo": "8796",
         "nombre": "REDMI 13 8GB/256GB",
         "categoria": "telefono",
-        "spec1": "IPS 6.79\\" LCD, 90Hz,",
-        "spec2": "C·mara principal 108 MP (f/1,8)",
+        "spec1": "IPS 6.79\" LCD, 90Hz,",
+        "spec2": "C√°mara principal 108 MP (f/1,8)",
         "spec3": "5000 MAH",
         "precio": 1899,
         "precioOferta": 1399
@@ -423,7 +423,7 @@ const productos = [
         "nombre": "REDMI NOTE 13 PRO 5G",
         "categoria": "telefono",
         "spec1": "Pantalla AMOLED de 6,67'",
-        "spec2": "C·mara principal 200 MP (f/1.65)",
+        "spec2": "C√°mara principal 200 MP (f/1.65)",
         "spec3": "5100 MAH",
         "precio": 3599,
         "precioOferta": 2849
@@ -431,10 +431,10 @@ const productos = [
     ,
     {
         "codigo": "9171",
-        "nombre": "REDMI PAD SE 8.7\\" LTE",
+        "nombre": "REDMI PAD SE 8.7\" LTE",
         "categoria": "telefono",
-        "spec1": "LCD 8,7\\" 90HZ",
-        "spec2": "C·mara principal 8 MP (f/2.0)",
+        "spec1": "LCD 8,7\" 90HZ",
+        "spec2": "C√°mara principal 8 MP (f/2.0)",
         "spec3": "6650 MAH",
         "precio": 1399,
         "precioOferta": 1199
@@ -444,8 +444,8 @@ const productos = [
         "codigo": "8801",
         "nombre": "REDMI A3X",
         "categoria": "telefono",
-        "spec1": "Dot Drop de 6,71\\"",
-        "spec2": "C·mara principal 8 MP (f/2.0)",
+        "spec1": "Dot Drop de 6,71\"",
+        "spec2": "C√°mara principal 8 MP (f/2.0)",
         "spec3": "5000 MAH",
         "precio": 1299,
         "precioOferta": 899
@@ -455,7 +455,7 @@ const productos = [
         "codigo": "9283",
         "nombre": "Xiaomi Mix Flip",
         "categoria": "telefono",
-        "spec1": "CrystalRes de 1-120 Hz y 6,86\\"",
+        "spec1": "CrystalRes de 1-120 Hz y 6,86\"",
         "spec2": "LEICA VARIO-SUMMILUX 50 MP",
         "spec3": "4780 MAH",
         "precio": 10999,
@@ -467,7 +467,7 @@ const productos = [
         "nombre": "Redmi Pad SE",
         "categoria": "telefono",
         "spec1": "FHD+ de 11''",
-        "spec2": "C·mara trasera de 8 MP",
+        "spec2": "C√°mara trasera de 8 MP",
         "spec3": "8000 MAH",
         "precio": 1699,
         "precioOferta": 1199
@@ -477,8 +477,8 @@ const productos = [
         "codigo": "9277",
         "nombre": "Redmi 14 C",
         "categoria": "telefono",
-        "spec1": "6.88\\"  IPS LCD, 120Hz",
-        "spec2": "C·mara principal 50 MP (f/1.8)",
+        "spec1": "6.88\"  IPS LCD, 120Hz",
+        "spec2": "C√°mara principal 50 MP (f/1.8)",
         "spec3": "5160 MAH",
         "precio": 1499,
         "precioOferta": 999
@@ -488,10 +488,10 @@ const productos = [
         "codigo": "9282",
         "nombre": "Xiaomi 14T",
         "categoria": "telefono",
-        "spec1": "AMOLED 6.67\\" 144Hz con IA",
-        "spec2": "Doble C·mara Leica50 MP",
+        "spec1": "AMOLED 6.67\" 144Hz con IA",
+        "spec2": "Doble C√°mara Leica50 MP",
         "spec3": "5000 MAH",
-        "precio": 0,
+        "precio": 5499,
         "precioOferta": 4099
     }
     ,
@@ -499,10 +499,10 @@ const productos = [
         "codigo": "9331",
         "nombre": "Xiaomi 14T Pro",
         "categoria": "telefono",
-        "spec1": "AMOLED 6.67\\" 144Hz con IA",
-        "spec2": "Doble C·mara Leica50 MP",
+        "spec1": "AMOLED 6.67\" 144Hz con IA",
+        "spec2": "Doble C√°mara Leica50 MP",
         "spec3": "5000 MAH",
-        "precio": 0,
+        "precio": 6499,
         "precioOferta": 4999
     }
     ,
@@ -510,8 +510,8 @@ const productos = [
         "codigo": "9733",
         "nombre": "Redmi Note 14 Pro+ 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,67\\" 120 Hz",
-        "spec2": "C·mara principal de 200†MP OIS f/1,65",
+        "spec1": "AMOLED de 6,67\" 120 Hz",
+        "spec2": "C√°mara principal de 200¬†MP OIS f/1,65",
         "spec3": "5110 MAH",
         "precio": 3299,
         "precioOferta": 2999
@@ -521,8 +521,8 @@ const productos = [
         "codigo": "9736",
         "nombre": "Redmi Note 14 Pro",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,67\\" 120 Hz",
-        "spec2": "C·mara principal de 200†MP OIS f/1,65",
+        "spec1": "AMOLED de 6,67\" 120 Hz",
+        "spec2": "C√°mara principal de 200¬†MP OIS f/1,65",
         "spec3": "5500 MAH",
         "precio": 2399,
         "precioOferta": 1799
@@ -532,8 +532,8 @@ const productos = [
         "codigo": "GT9798",
         "nombre": "Redmi Note 14",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,67\\" 120 Hz",
-        "spec2": "C·mara principal de 108†MP f1,7",
+        "spec1": "AMOLED de 6,67\" 120 Hz",
+        "spec2": "C√°mara principal de 108¬†MP f1,7",
         "spec3": "5500 MAH",
         "precio": 1699,
         "precioOferta": 1275
@@ -543,8 +543,8 @@ const productos = [
         "codigo": "GT9792",
         "nombre": "Redmi Note 14",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,67\\" 120 Hz",
-        "spec2": "C·mara principal de 108†MP f1,7",
+        "spec1": "AMOLED de 6,67\" 120 Hz",
+        "spec2": "C√°mara principal de 108¬†MP f1,7",
         "spec3": "5500 MAH",
         "precio": 1699,
         "precioOferta": 1275
@@ -554,8 +554,8 @@ const productos = [
         "codigo": "10579",
         "nombre": "Redmi Note 14",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,67\\" 120 Hz",
-        "spec2": "C·mara principal de 108†MP f1,7",
+        "spec1": "AMOLED de 6,67\" 120 Hz",
+        "spec2": "C√°mara principal de 108¬†MP f1,7",
         "spec3": "5500 MAH",
         "precio": 1699,
         "precioOferta": 1275
@@ -565,8 +565,8 @@ const productos = [
         "codigo": "GT9793",
         "nombre": "Redmi Note 14",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,67\\" 120 Hz",
-        "spec2": "C·mara principal de 108†MP f1,7",
+        "spec1": "AMOLED de 6,67\" 120 Hz",
+        "spec2": "C√°mara principal de 108¬†MP f1,7",
         "spec3": "5500 MAH",
         "precio": 1699,
         "precioOferta": 1275
@@ -576,8 +576,8 @@ const productos = [
         "codigo": "9792",
         "nombre": "Redmi Note 14",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,67\\" 120 Hz",
-        "spec2": "C·mara principal de 108†MP f1,7",
+        "spec1": "AMOLED de 6,67\" 120 Hz",
+        "spec2": "C√°mara principal de 108¬†MP f1,7",
         "spec3": "5500 MAH",
         "precio": 1599,
         "precioOferta": 1275
@@ -587,8 +587,8 @@ const productos = [
         "codigo": "9793",
         "nombre": "Redmi Note 14",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,67\\" 120 Hz",
-        "spec2": "C·mara principal de 108†MP f1,7",
+        "spec1": "AMOLED de 6,67\" 120 Hz",
+        "spec2": "C√°mara principal de 108¬†MP f1,7",
         "spec3": "5500 MAH",
         "precio": 1699,
         "precioOferta": 1275
@@ -598,8 +598,8 @@ const productos = [
         "codigo": "9798",
         "nombre": "Redmi Note 14",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,67\\" 120 Hz",
-        "spec2": "C·mara principal de 108†MP f1,7",
+        "spec1": "AMOLED de 6,67\" 120 Hz",
+        "spec2": "C√°mara principal de 108¬†MP f1,7",
         "spec3": "5500 MAH",
         "precio": 1699,
         "precioOferta": 1275
@@ -609,8 +609,8 @@ const productos = [
         "codigo": "9730",
         "nombre": "Redmi Note 14 Pro 5G",
         "categoria": "telefono",
-        "spec1": "CrystalRes AMOLED de 6,67\\"",
-        "spec2": "C·mara principal de 200†MP OIS f/1,65",
+        "spec1": "CrystalRes AMOLED de 6,67\"",
+        "spec2": "C√°mara principal de 200¬†MP OIS f/1,65",
         "spec3": "5110 MAH",
         "precio": 3299,
         "precioOferta": 2599
@@ -631,8 +631,8 @@ const productos = [
         "codigo": "9964",
         "nombre": "Redmi Note 14S",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,67\\" 120 Hz",
-        "spec2": "C·mara principal de 200†MP OIS f/1,7",
+        "spec1": "AMOLED de 6,67\" 120 Hz",
+        "spec2": "C√°mara principal de 200¬†MP OIS f/1,7",
         "spec3": "5000 MAH",
         "precio": 2199,
         "precioOferta": 1999
@@ -642,8 +642,8 @@ const productos = [
         "codigo": "9967",
         "nombre": "REDMI PAD PRO",
         "categoria": "telefono",
-        "spec1": "2,5K de 120 Hz y 12,1\\"",
-        "spec2": "C·mara principal 8 MP (f/2,8)",
+        "spec1": "2,5K de 120 Hz y 12,1\"",
+        "spec2": "C√°mara principal 8 MP (f/2,8)",
         "spec3": "10000 MAH",
         "precio": 2899,
         "precioOferta": 2299
@@ -653,7 +653,7 @@ const productos = [
         "codigo": "10120",
         "nombre": "XIAOMI 15",
         "categoria": "telefono",
-        "spec1": "CrystalRes 6.36\\" 3200 nits",
+        "spec1": "CrystalRes 6.36\" 3200 nits",
         "spec2": "Leica 50MP f/1.62 OIS",
         "spec3": "5240 MAH wireless HyperCharge 50W",
         "precio": 7999,
@@ -665,7 +665,7 @@ const productos = [
         "nombre": "Redmi Pad SE",
         "categoria": "telefono",
         "spec1": "FHD+ de 11''",
-        "spec2": "C·mara trasera de 8 MP",
+        "spec2": "C√°mara trasera de 8 MP",
         "spec3": "8000 MAH",
         "precio": 1699,
         "precioOferta": 1256
@@ -763,7 +763,7 @@ const productos = [
         "codigo": "11022",
         "nombre": "Xiaomi 15T",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,83\\" 120 Hz",
+        "spec1": "AMOLED de 6,83\" 120 Hz",
         "spec2": "50MP, 50MP, 12MP",
         "spec3": "5500 MAH",
         "precio": 5648,
@@ -774,7 +774,7 @@ const productos = [
         "codigo": "11023",
         "nombre": "Xiaomi 15T",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,83\\" 120 Hz",
+        "spec1": "AMOLED de 6,83\" 120 Hz",
         "spec2": "50MP, 50MP, 12MP",
         "spec3": "5500 MAH",
         "precio": 5648,
@@ -785,7 +785,7 @@ const productos = [
         "codigo": "11021",
         "nombre": "Xiaomi 15T",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,83\\" 120 Hz",
+        "spec1": "AMOLED de 6,83\" 120 Hz",
         "spec2": "50MP, 50MP, 12MP",
         "spec3": "5500 MAH",
         "precio": 5648,
@@ -796,7 +796,7 @@ const productos = [
         "codigo": "11019",
         "nombre": "Xiaomi 15T Pro",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,83\\" 144 Hz",
+        "spec1": "AMOLED de 6,83\" 144 Hz",
         "spec2": "50MP, 50MP, 12MP",
         "spec3": "5500 MAH",
         "precio": 6499,
@@ -807,7 +807,7 @@ const productos = [
         "codigo": "11020",
         "nombre": "Xiaomi 15T Pro",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,83\\" 144 Hz",
+        "spec1": "AMOLED de 6,83\" 144 Hz",
         "spec2": "50MP, 50MP, 12MP",
         "spec3": "5500 MAH",
         "precio": 6499,
@@ -818,7 +818,7 @@ const productos = [
         "codigo": "11024",
         "nombre": "Xiaomi 15T Pro",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6,83\\" 144 Hz",
+        "spec1": "AMOLED de 6,83\" 144 Hz",
         "spec2": "50MP, 50MP, 12MP",
         "spec3": "5500 MAH",
         "precio": 6499,
@@ -829,7 +829,7 @@ const productos = [
         "codigo": "10879",
         "nombre": "Redmi 15C",
         "categoria": "telefono",
-        "spec1": "6.9\\" Dot Drop display",
+        "spec1": "6.9\" Dot Drop display",
         "spec2": "50MP f1.8 + 5Mp",
         "spec3": "6000 MAH",
         "precio": 1099,
@@ -840,7 +840,7 @@ const productos = [
         "codigo": "10876",
         "nombre": "Redmi 15C",
         "categoria": "telefono",
-        "spec1": "6.9\\" Dot Drop display",
+        "spec1": "6.9\" Dot Drop display",
         "spec2": "50MP f1.8 + 5Mp",
         "spec3": "6000 MAH",
         "precio": 999,
@@ -851,7 +851,7 @@ const productos = [
         "codigo": "GT10876",
         "nombre": "Redmi 15C",
         "categoria": "telefono",
-        "spec1": "6.9\\" Dot Drop display",
+        "spec1": "6.9\" Dot Drop display",
         "spec2": "50MP f1.8 + 5Mp",
         "spec3": "6000 MAH",
         "precio": 1099,
@@ -862,7 +862,7 @@ const productos = [
         "codigo": "GT11026",
         "nombre": "Redmi 15C",
         "categoria": "telefono",
-        "spec1": "6.9\\" Dot Drop display",
+        "spec1": "6.9\" Dot Drop display",
         "spec2": "50MP f1.8 + 5Mp",
         "spec3": "6000 MAH",
         "precio": 1099,
@@ -873,7 +873,7 @@ const productos = [
         "codigo": "GT10879",
         "nombre": "Redmi 15C",
         "categoria": "telefono",
-        "spec1": "6.9\\" Dot Drop display",
+        "spec1": "6.9\" Dot Drop display",
         "spec2": "50MP f1.8 + 5Mp",
         "spec3": "6000 MAH",
         "precio": 1099,
@@ -884,7 +884,7 @@ const productos = [
         "codigo": "10875",
         "nombre": "Redmi 15C",
         "categoria": "telefono",
-        "spec1": "6.9\\" Dot Drop display",
+        "spec1": "6.9\" Dot Drop display",
         "spec2": "50MP f1.8 + 5Mp",
         "spec3": "6000 MAH",
         "precio": 1499,
@@ -895,7 +895,7 @@ const productos = [
         "codigo": "11113",
         "nombre": "Redmi 15C",
         "categoria": "telefono",
-        "spec1": "6.9\\" Dot Drop display",
+        "spec1": "6.9\" Dot Drop display",
         "spec2": "50MP f1.8 + 5Mp",
         "spec3": "6000 MAH",
         "precio": 1299,
@@ -906,7 +906,7 @@ const productos = [
         "codigo": "10874",
         "nombre": "Redmi 15C",
         "categoria": "telefono",
-        "spec1": "6.9\\" Dot Drop display",
+        "spec1": "6.9\" Dot Drop display",
         "spec2": "50MP f1.8 + 5Mp",
         "spec3": "6000 MAH",
         "precio": 1299,
@@ -917,9 +917,9 @@ const productos = [
         "codigo": "10127",
         "nombre": "Redmi A5",
         "categoria": "telefono",
-        "spec1": "LCD 6.88" HD+ (720 ◊ 1640)",
-        "spec2": "C·mara principal de 32 MP (f/2.0)",
-        "spec3": "BaterÌa de 5200 mAh",
+        "spec1": "LCD 6.88‚Ä≥ HD+ (720 √ó 1640)",
+        "spec2": "C√°mara principal de 32 MP (f/2.0)",
+        "spec3": "Bater√≠a de 5200 mAh",
         "precio": 999,
         "precioOferta": 899
     }
@@ -928,9 +928,9 @@ const productos = [
         "codigo": "9795",
         "nombre": "Redmi note 14 5G",
         "categoria": "telefono",
-        "spec1": "CrystalRes AMOLED de 6,67\\"",
-        "spec2": "C·mara principal de 108†MP OIS f/1,7",
-        "spec3": "BaterÌa de 5110mAh",
+        "spec1": "CrystalRes AMOLED de 6,67\"",
+        "spec2": "C√°mara principal de 108¬†MP OIS f/1,7",
+        "spec3": "Bater√≠a de 5110mAh",
         "precio": 2099,
         "precioOferta": 0
     }
@@ -939,9 +939,9 @@ const productos = [
         "codigo": "7166",
         "nombre": "Poco C40",
         "categoria": "telefono",
-        "spec1": "Dot Drop de 6,71\\"",
-        "spec2": "C·mara principal de 13†MP (É/2,2)",
-        "spec3": "BaterÌa 6000†mAh",
+        "spec1": "Dot Drop de 6,71\"",
+        "spec2": "C√°mara principal de 13¬†MP (∆í/2,2)",
+        "spec3": "Bater√≠a 6000¬†mAh",
         "precio": 1799,
         "precioOferta": 1169
     }
@@ -950,8 +950,8 @@ const productos = [
         "codigo": "11122",
         "nombre": "Redmi Pad 2 Pro",
         "categoria": "telefono",
-        "spec1": "2,5K de 120 Hz y 12,1\\"",
-        "spec2": "8 MP 1/4\\", f/2",
+        "spec1": "2,5K de 120 Hz y 12,1\"",
+        "spec2": "8 MP 1/4\", f/2",
         "spec3": "12000 mAh",
         "precio": 2899,
         "precioOferta": 2699
@@ -961,9 +961,9 @@ const productos = [
         "codigo": "11417",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 1899,
         "precioOferta": 1799
     }
@@ -972,9 +972,9 @@ const productos = [
         "codigo": "11418",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 1899,
         "precioOferta": 1799
     }
@@ -983,9 +983,9 @@ const productos = [
         "codigo": "GT11418",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 1899,
         "precioOferta": 1699
     }
@@ -994,9 +994,9 @@ const productos = [
         "codigo": "GT11419",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 1899,
         "precioOferta": 1699
     }
@@ -1005,9 +1005,9 @@ const productos = [
         "codigo": "11419",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 1899,
         "precioOferta": 1699
     }
@@ -1016,9 +1016,9 @@ const productos = [
         "codigo": "GT11406",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 2199,
         "precioOferta": 1899
     }
@@ -1027,9 +1027,9 @@ const productos = [
         "codigo": "11408",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 2199,
         "precioOferta": 1899
     }
@@ -1038,9 +1038,9 @@ const productos = [
         "codigo": "GT11416",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 2199,
         "precioOferta": 1899
     }
@@ -1049,9 +1049,9 @@ const productos = [
         "codigo": "11406",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 2199,
         "precioOferta": 1799
     }
@@ -1060,9 +1060,9 @@ const productos = [
         "codigo": "11416",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 2199,
         "precioOferta": 1899
     }
@@ -1071,9 +1071,9 @@ const productos = [
         "codigo": "11410",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 2499,
         "precioOferta": 0
     }
@@ -1082,9 +1082,9 @@ const productos = [
         "codigo": "GT11410",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 2499,
         "precioOferta": 0
     }
@@ -1093,9 +1093,9 @@ const productos = [
         "codigo": "11422",
         "nombre": "Redmi Note 15 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 108 MP F1.7",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 108 MP F1.7",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 2499,
         "precioOferta": 0
     }
@@ -1104,9 +1104,9 @@ const productos = [
         "codigo": "11405",
         "nombre": "Redmi Note 15 Pro 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 2999,
         "precioOferta": 2399
     }
@@ -1115,9 +1115,9 @@ const productos = [
         "codigo": "GT11420",
         "nombre": "Redmi Note 15 Pro 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 3299,
         "precioOferta": 2599
     }
@@ -1126,9 +1126,9 @@ const productos = [
         "codigo": "11420",
         "nombre": "Redmi Note 15 Pro 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 3299,
         "precioOferta": 2599
     }
@@ -1137,9 +1137,9 @@ const productos = [
         "codigo": "11413",
         "nombre": "Redmi Note 15 Pro 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 2899,
         "precioOferta": 2399
     }
@@ -1148,9 +1148,9 @@ const productos = [
         "codigo": "GT11413",
         "nombre": "Redmi Note 15 Pro 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 2999,
         "precioOferta": 2299
     }
@@ -1159,9 +1159,9 @@ const productos = [
         "codigo": "GT11404",
         "nombre": "Redmi Note 15 Pro 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 2999,
         "precioOferta": 2299
     }
@@ -1170,9 +1170,9 @@ const productos = [
         "codigo": "11409",
         "nombre": "Redmi Note 15 Pro 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 2999,
         "precioOferta": 2299
     }
@@ -1181,9 +1181,9 @@ const productos = [
         "codigo": "11404",
         "nombre": "Redmi Note 15 Pro 4G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.77\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED de 6.77\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 2999,
         "precioOferta": 2199
     }
@@ -1192,9 +1192,9 @@ const productos = [
         "codigo": "11402",
         "nombre": "Redmi Note 15 Pro 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.83\\" 1.5K",
-        "spec2": "C·mara 200 MP F1.7",
-        "spec3": "BaterÌa de 6580 mAh",
+        "spec1": "AMOLED de 6.83\" 1.5K",
+        "spec2": "C√°mara 200 MP F1.7",
+        "spec3": "Bater√≠a de 6580 mAh",
         "precio": 3599,
         "precioOferta": 3199
     }
@@ -1203,9 +1203,9 @@ const productos = [
         "codigo": "GT11544",
         "nombre": "Redmi Note 15 Pro 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.83\\" 1.5K",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6580 mAh",
+        "spec1": "AMOLED de 6.83\" 1.5K",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6580 mAh",
         "precio": 3899,
         "precioOferta": 2999
     }
@@ -1214,9 +1214,9 @@ const productos = [
         "codigo": "11411",
         "nombre": "Redmi Note 15 Pro 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED de 6.83\\" 1.5K",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6580 mAh",
+        "spec1": "AMOLED de 6.83\" 1.5K",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6580 mAh",
         "precio": 3927,
         "precioOferta": 3299
     }
@@ -1225,9 +1225,9 @@ const productos = [
         "codigo": "11412",
         "nombre": "Redmi Note 15 Pro+ 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED CrystalRes de 6.83\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED CrystalRes de 6.83\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 3689,
         "precioOferta": 4199
     }
@@ -1236,9 +1236,9 @@ const productos = [
         "codigo": "11407",
         "nombre": "Redmi Note 15 Pro+ 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED CrystalRes de 6.83\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED CrystalRes de 6.83\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 4599,
         "precioOferta": 4199
     }
@@ -1247,9 +1247,9 @@ const productos = [
         "codigo": "11403",
         "nombre": "Redmi Note 15 Pro+ 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED CrystalRes de 6.83\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED CrystalRes de 6.83\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 4599,
         "precioOferta": 3999
     }
@@ -1258,9 +1258,9 @@ const productos = [
         "codigo": "GT11407",
         "nombre": "Redmi Note 15 Pro+ 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED CrystalRes de 6.83\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED CrystalRes de 6.83\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 4599,
         "precioOferta": 3999
     }
@@ -1269,9 +1269,9 @@ const productos = [
         "codigo": "11677",
         "nombre": "Redmi Note 15 Pro+ 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED CrystalRes de 6.83\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED CrystalRes de 6.83\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 4199,
         "precioOferta": 3699
     }
@@ -1280,9 +1280,9 @@ const productos = [
         "codigo": "BM11677",
         "nombre": "Redmi Note 15 Pro+ 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED CrystalRes de 6.83\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED CrystalRes de 6.83\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 4199,
         "precioOferta": 3699
     }
@@ -1291,9 +1291,9 @@ const productos = [
         "codigo": "BM11675",
         "nombre": "Redmi Note 15 Pro+ 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED CrystalRes de 6.83\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED CrystalRes de 6.83\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 4199,
         "precioOferta": 3699
     }
@@ -1302,9 +1302,9 @@ const productos = [
         "codigo": "BM11676",
         "nombre": "Redmi Note 15 Pro+ 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED CrystalRes de 6.83\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED CrystalRes de 6.83\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 4199,
         "precioOferta": 3699
     }
@@ -1324,9 +1324,9 @@ const productos = [
         "codigo": "11675",
         "nombre": "Redmi Note 15 Pro+ 5G",
         "categoria": "telefono",
-        "spec1": "AMOLED CrystalRes de 6.83\\"",
-        "spec2": "C·mara principal de 200 MP F1.7",
-        "spec3": "BaterÌa de 6500 mAh",
+        "spec1": "AMOLED CrystalRes de 6.83\"",
+        "spec2": "C√°mara principal de 200 MP F1.7",
+        "spec3": "Bater√≠a de 6500 mAh",
         "precio": 3689,
         "precioOferta": 0
     }
@@ -1336,7 +1336,7 @@ const productos = [
         "nombre": "Xiaomi LCD Writing Tablet 13.5",
         "categoria": "telefono",
         "spec1": "Pinceladas llenas de vida",
-        "spec2": "Ligera y port·til",
+        "spec2": "Ligera y port√°til",
         "spec3": "Filtra la luz azul",
         "precio": 389,
         "precioOferta": 285
@@ -1346,9 +1346,9 @@ const productos = [
         "codigo": "10867",
         "nombre": "Redmi 15 4G",
         "categoria": "telefono",
-        "spec1": "FHD+ inmersiva de 6.9\\"",
-        "spec2": "C·mara principal de 50 MP F1.8",
-        "spec3": "BaterÌa de 7000 mAh",
+        "spec1": "FHD+ inmersiva de 6.9\"",
+        "spec2": "C√°mara principal de 50 MP F1.8",
+        "spec3": "Bater√≠a de 7000 mAh",
         "precio": 1599,
         "precioOferta": 0
     }
@@ -1357,9 +1357,9 @@ const productos = [
         "codigo": "10872",
         "nombre": "Redmi 15 4G",
         "categoria": "telefono",
-        "spec1": "FHD+ inmersiva de 6.9\\"",
-        "spec2": "C·mara principal de 50 MP F1.8",
-        "spec3": "BaterÌa de 7000 mAh",
+        "spec1": "FHD+ inmersiva de 6.9\"",
+        "spec2": "C√°mara principal de 50 MP F1.8",
+        "spec3": "Bater√≠a de 7000 mAh",
         "precio": 1399,
         "precioOferta": 0
     }
@@ -1368,9 +1368,9 @@ const productos = [
         "codigo": "10868",
         "nombre": "Redmi 15 4G",
         "categoria": "telefono",
-        "spec1": "FHD+ inmersiva de 6.9\\"",
-        "spec2": "C·mara principal de 50 MP F1.8",
-        "spec3": "BaterÌa de 7000 mAh",
+        "spec1": "FHD+ inmersiva de 6.9\"",
+        "spec2": "C√°mara principal de 50 MP F1.8",
+        "spec3": "Bater√≠a de 7000 mAh",
         "precio": 1399,
         "precioOferta": 0
     }
@@ -1379,9 +1379,9 @@ const productos = [
         "codigo": "GT10868",
         "nombre": "Redmi 15 4G",
         "categoria": "telefono",
-        "spec1": "FHD+ inmersiva de 6.9\\"",
-        "spec2": "C·mara principal de 50 MP F1.8",
-        "spec3": "BaterÌa de 7000 mAh",
+        "spec1": "FHD+ inmersiva de 6.9\"",
+        "spec2": "C√°mara principal de 50 MP F1.8",
+        "spec3": "Bater√≠a de 7000 mAh",
         "precio": 1399,
         "precioOferta": 0
     }
@@ -1390,9 +1390,9 @@ const productos = [
         "codigo": "GT10867",
         "nombre": "Redmi 15 4G",
         "categoria": "telefono",
-        "spec1": "FHD+ inmersiva de 6.9\\"",
-        "spec2": "C·mara principal de 50 MP F1.8",
-        "spec3": "BaterÌa de 7000 mAh",
+        "spec1": "FHD+ inmersiva de 6.9\"",
+        "spec2": "C√°mara principal de 50 MP F1.8",
+        "spec3": "Bater√≠a de 7000 mAh",
         "precio": 1399,
         "precioOferta": 0
     }
@@ -1401,9 +1401,9 @@ const productos = [
         "codigo": "GT11646",
         "nombre": "Redmi A7 Pro 4G",
         "categoria": "telefono",
-        "spec1": "Pantalla LCD de 6,9\\"",
-        "spec2": "C·mara principal de 13 MP F2.2",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "Pantalla LCD de 6,9\"",
+        "spec2": "C√°mara principal de 13 MP F2.2",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 1119,
         "precioOferta": 0
     }
@@ -1412,9 +1412,9 @@ const productos = [
         "codigo": "GT11644",
         "nombre": "Redmi A7 Pro 4G",
         "categoria": "telefono",
-        "spec1": "Pantalla LCD de 6,9\\"",
-        "spec2": "C·mara principal de 13 MP F2.2",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "Pantalla LCD de 6,9\"",
+        "spec2": "C√°mara principal de 13 MP F2.2",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 1119,
         "precioOferta": 0
     }
@@ -1423,9 +1423,9 @@ const productos = [
         "codigo": "11650",
         "nombre": "Xiaomi 17 Ultra 5G",
         "categoria": "telefono",
-        "spec1": "OLED Xiaomi HyperRGB de 6.9\\"",
-        "spec2": "50MP 1\\" | 200MP TO ! 50MP UW",
-        "spec3": "BaterÌa de 6000 mAh",
+        "spec1": "OLED Xiaomi HyperRGB de 6.9\"",
+        "spec2": "50MP 1\" | 200MP TO ! 50MP UW",
+        "spec3": "Bater√≠a de 6000 mAh",
         "precio": 13499,
         "precioOferta": 0
     }
@@ -1434,9 +1434,9 @@ const productos = [
         "codigo": "11647",
         "nombre": "Xiaomi 17 5G",
         "categoria": "telefono",
-        "spec1": "OLED Xiaomi CrystalRes de 6.3\\"",
-        "spec2": "Triple C·mara 50MP Leica",
-        "spec3": "BaterÌa de 6330 mAh",
+        "spec1": "OLED Xiaomi CrystalRes de 6.3\"",
+        "spec2": "Triple C√°mara 50MP Leica",
+        "spec3": "Bater√≠a de 6330 mAh",
         "precio": 9299,
         "precioOferta": 0
     }
@@ -1445,9 +1445,9 @@ const productos = [
         "codigo": "11648",
         "nombre": "Xiaomi 17 5G",
         "categoria": "telefono",
-        "spec1": "OLED Xiaomi CrystalRes de 6.3\\"",
-        "spec2": "Triple C·mara 50MP Leica",
-        "spec3": "BaterÌa de 6330 mAh",
+        "spec1": "OLED Xiaomi CrystalRes de 6.3\"",
+        "spec2": "Triple C√°mara 50MP Leica",
+        "spec3": "Bater√≠a de 6330 mAh",
         "precio": 9299,
         "precioOferta": 0
     }
@@ -1489,8 +1489,8 @@ const productos = [
         "codigo": "11973",
         "nombre": "Redmi Pad 2 9.7 WiFi",
         "categoria": "telefono",
-        "spec1": "2K 9,7\\" 500 nits",
-        "spec2": "C·mara trasera de 8 MP",
+        "spec1": "2K 9,7\" 500 nits",
+        "spec2": "C√°mara trasera de 8 MP",
         "spec3": "7600 mAh",
         "precio": 1599,
         "precioOferta": 0
@@ -1498,10 +1498,10 @@ const productos = [
     ,
     {
         "codigo": "11992",
-        "nombre": "Redmi Pad 2 9.7\\" LTE",
+        "nombre": "Redmi Pad 2 9.7\" LTE",
         "categoria": "telefono",
-        "spec1": "2K 9,7\\" 500 nits",
-        "spec2": "C·mara trasera de 8 MP",
+        "spec1": "2K 9,7\" 500 nits",
+        "spec2": "C√°mara trasera de 8 MP",
         "spec3": "7600 mAh",
         "precio": 1799,
         "precioOferta": 0
@@ -1511,9 +1511,9 @@ const productos = [
         "codigo": "10123",
         "nombre": "Redmi A5",
         "categoria": "telefono",
-        "spec1": "LCD 6.88" HD+ (720 ◊ 1640)",
-        "spec2": "C·mara principal de 32 MP (f/2.0)",
-        "spec3": "BaterÌa de 5200 mAh",
+        "spec1": "LCD 6.88‚Ä≥ HD+ (720 √ó 1640)",
+        "spec2": "C√°mara principal de 32 MP (f/2.0)",
+        "spec3": "Bater√≠a de 5200 mAh",
         "precio": 799,
         "precioOferta": 649
     }
@@ -1524,7 +1524,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Deportivo y con estilo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla 1,43î AMOLED",
+        "spec3": "Pantalla 1,43‚Äù AMOLED",
         "precio": 849,
         "precioOferta": 0
     }
@@ -1535,7 +1535,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Siempre active",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla 1,47î TFT 247ppp",
+        "spec3": "Pantalla 1,47‚Äù TFT 247ppp",
         "precio": 0,
         "precioOferta": 0
     }
@@ -1568,7 +1568,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Deportivo y con estilo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla 1,97î TFT 600Nits",
+        "spec3": "Pantalla 1,97‚Äù TFT 600Nits",
         "precio": 856,
         "precioOferta": 656
     }
@@ -1599,9 +1599,9 @@ const productos = [
         "codigo": "7804",
         "nombre": "Redmi Watch 3 Active",
         "categoria": "reloj",
-        "spec1": "M·s f·cil de ver",
+        "spec1": "M√°s f√°cil de ver",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla 1,83î LCD 450Nits",
+        "spec3": "Pantalla 1,83‚Äù LCD 450Nits",
         "precio": 379,
         "precioOferta": 0
     }
@@ -1656,7 +1656,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Siempre active",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla 1,47î TFT 247ppp",
+        "spec3": "Pantalla 1,47‚Äù TFT 247ppp",
         "precio": 239,
         "precioOferta": 0
     }
@@ -1667,7 +1667,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Siempre active",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla 1,47î TFT 247ppp",
+        "spec3": "Pantalla 1,47‚Äù TFT 247ppp",
         "precio": 239,
         "precioOferta": 0
     }
@@ -1678,7 +1678,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Siempre active",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla 1,47î TFT 247ppp",
+        "spec3": "Pantalla 1,47‚Äù TFT 247ppp",
         "precio": 239,
         "precioOferta": 0
     }
@@ -1689,7 +1689,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Siempre active",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla 1,47î TFT 247ppp",
+        "spec3": "Pantalla 1,47‚Äù TFT 247ppp",
         "precio": 239,
         "precioOferta": 0
     }
@@ -1700,7 +1700,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Siempre active",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla 1,47î TFT 247ppp",
+        "spec3": "Pantalla 1,47‚Äù TFT 247ppp",
         "precio": 239,
         "precioOferta": 0
     }
@@ -1711,7 +1711,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Siempre active",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla LCD 2\\"",
+        "spec3": "Pantalla LCD 2\"",
         "precio": 299,
         "precioOferta": 0
     }
@@ -1722,7 +1722,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Siempre active",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla LCD 2\\"",
+        "spec3": "Pantalla LCD 2\"",
         "precio": 299,
         "precioOferta": 0
     }
@@ -1731,9 +1731,9 @@ const productos = [
         "codigo": "9726",
         "nombre": "Redmi Watch 5",
         "categoria": "reloj",
-        "spec1": "Da m·s de ti",
+        "spec1": "Da m√°s de ti",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 2,07\\"",
+        "spec3": "Pantalla AMOLED 2,07\"",
         "precio": 899,
         "precioOferta": 689
     }
@@ -1742,9 +1742,9 @@ const productos = [
         "codigo": "9725",
         "nombre": "Redmi Watch 5",
         "categoria": "reloj",
-        "spec1": "Da m·s de ti",
+        "spec1": "Da m√°s de ti",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 2,07\\"",
+        "spec3": "Pantalla AMOLED 2,07\"",
         "precio": 899,
         "precioOferta": 689
     }
@@ -1753,9 +1753,9 @@ const productos = [
         "codigo": "9727",
         "nombre": "Redmi Watch 5",
         "categoria": "reloj",
-        "spec1": "Da m·s de ti",
+        "spec1": "Da m√°s de ti",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 2,07\\"",
+        "spec3": "Pantalla AMOLED 2,07\"",
         "precio": 899,
         "precioOferta": 689
     }
@@ -1766,7 +1766,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "A tu estilo, a tu ritmo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,74\\"",
+        "spec3": "Pantalla AMOLED 1,74\"",
         "precio": 799,
         "precioOferta": 399
     }
@@ -1777,7 +1777,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "A tu estilo, a tu ritmo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,74\\"",
+        "spec3": "Pantalla AMOLED 1,74\"",
         "precio": 799,
         "precioOferta": 399
     }
@@ -1788,7 +1788,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "A tu estilo, a tu ritmo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,74\\"",
+        "spec3": "Pantalla AMOLED 1,74\"",
         "precio": 799,
         "precioOferta": 399
     }
@@ -1799,7 +1799,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "A tu estilo, a tu ritmo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,96\\"",
+        "spec3": "Pantalla AMOLED 1,96\"",
         "precio": 479,
         "precioOferta": 409
     }
@@ -1810,7 +1810,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "A tu estilo, a tu ritmo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,96\\"",
+        "spec3": "Pantalla AMOLED 1,96\"",
         "precio": 479,
         "precioOferta": 409
     }
@@ -1821,7 +1821,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "A tu estilo, a tu ritmo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,96\\"",
+        "spec3": "Pantalla AMOLED 1,96\"",
         "precio": 479,
         "precioOferta": 409
     }
@@ -1832,7 +1832,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "A tu estilo, a tu ritmo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,96\\"",
+        "spec3": "Pantalla AMOLED 1,96\"",
         "precio": 479,
         "precioOferta": 409
     }
@@ -1843,7 +1843,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Mejora tu estilo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,43\\"",
+        "spec3": "Pantalla AMOLED 1,43\"",
         "precio": 1599,
         "precioOferta": 1249
     }
@@ -1854,7 +1854,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Encuentra tu estilo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,72\\"",
+        "spec3": "Pantalla AMOLED 1,72\"",
         "precio": 449,
         "precioOferta": 0
     }
@@ -1865,7 +1865,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Encuentra tu estilo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,72\\"",
+        "spec3": "Pantalla AMOLED 1,72\"",
         "precio": 449,
         "precioOferta": 0
     }
@@ -1876,7 +1876,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Encuentra tu estilo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,72\\"",
+        "spec3": "Pantalla AMOLED 1,72\"",
         "precio": 449,
         "precioOferta": 0
     }
@@ -1887,7 +1887,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Encuentra tu estilo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,72\\"",
+        "spec3": "Pantalla AMOLED 1,72\"",
         "precio": 449,
         "precioOferta": 0
     }
@@ -1898,7 +1898,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Encuentra tu estilo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,72\\"",
+        "spec3": "Pantalla AMOLED 1,72\"",
         "precio": 449,
         "precioOferta": 0
     }
@@ -1909,7 +1909,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Encuentra tu estilo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,72\\"",
+        "spec3": "Pantalla AMOLED 1,72\"",
         "precio": 449,
         "precioOferta": 0
     }
@@ -1920,7 +1920,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Encuentra tu estilo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED 1,72\\"",
+        "spec3": "Pantalla AMOLED 1,72\"",
         "precio": 449,
         "precioOferta": 0
     }
@@ -1931,7 +1931,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Tu estilo, tu ritmo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED de 1,32\\"",
+        "spec3": "Pantalla AMOLED de 1,32\"",
         "precio": 1399,
         "precioOferta": 0
     }
@@ -1942,7 +1942,7 @@ const productos = [
         "categoria": "reloj",
         "spec1": "Tu estilo, tu ritmo",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED de 1,32\\"",
+        "spec3": "Pantalla AMOLED de 1,32\"",
         "precio": 1399,
         "precioOferta": 0
     }
@@ -1951,9 +1951,9 @@ const productos = [
         "codigo": "11603",
         "nombre": "Xiaomi Watch 5",
         "categoria": "reloj",
-        "spec1": "Cada vez m·s inteligente",
+        "spec1": "Cada vez m√°s inteligente",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED de 1,54\\"",
+        "spec3": "Pantalla AMOLED de 1,54\"",
         "precio": 2599,
         "precioOferta": 0
     }
@@ -1962,9 +1962,9 @@ const productos = [
         "codigo": "GT11604",
         "nombre": "Xiaomi Watch 5",
         "categoria": "reloj",
-        "spec1": "Cada vez m·s inteligente",
+        "spec1": "Cada vez m√°s inteligente",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED de 1,54\\"",
+        "spec3": "Pantalla AMOLED de 1,54\"",
         "precio": 2599,
         "precioOferta": 0
     }
@@ -1973,9 +1973,9 @@ const productos = [
         "codigo": "11604",
         "nombre": "Xiaomi Watch 5",
         "categoria": "reloj",
-        "spec1": "Cada vez m·s inteligente",
+        "spec1": "Cada vez m√°s inteligente",
         "spec2": "Smartwatch Xiaomi",
-        "spec3": "Pantalla AMOLED de 1,54\\"",
+        "spec3": "Pantalla AMOLED de 1,54\"",
         "precio": 2599,
         "precioOferta": 0
     }
@@ -2006,7 +2006,7 @@ const productos = [
         "codigo": "11846",
         "nombre": "Xiaomi Smart Band 10 Pro",
         "categoria": "reloj",
-        "spec1": "Sigue en forma, ve m·s all·",
+        "spec1": "Sigue en forma, ve m√°s all√°",
         "spec2": "Smartwatch Xiaomi",
         "spec3": "Xiaomi Smart Band 10 Pro",
         "precio": 749,
@@ -2018,7 +2018,7 @@ const productos = [
         "nombre": "Redmi Buds 4 Pro",
         "categoria": "audifonos",
         "spec1": "El sonido que buscas",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de sonido Hi-Fi",
         "precio": 0,
         "precioOferta": 0
@@ -2028,8 +2028,8 @@ const productos = [
         "codigo": "8274",
         "nombre": "Redmi Buds 5 Pro",
         "categoria": "audifonos",
-        "spec1": "Tu m˙sica y t˙",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Tu m√∫sica y t√∫",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2039,9 +2039,9 @@ const productos = [
         "codigo": "8927",
         "nombre": "Xiaomi OpenWear Stereo",
         "categoria": "audifonos",
-        "spec1": "Comodidad sin lÌmites",
-        "spec2": "AudÌfonos Bluetooth",
-        "spec3": "Audio de alta resoluciÛn LHDC",
+        "spec1": "Comodidad sin l√≠mites",
+        "spec2": "Aud√≠fonos Bluetooth",
+        "spec3": "Audio de alta resoluci√≥n LHDC",
         "precio": 0,
         "precioOferta": 0
     }
@@ -2050,9 +2050,9 @@ const productos = [
         "codigo": "8928",
         "nombre": "Xiaomi OpenWear Stereo",
         "categoria": "audifonos",
-        "spec1": "Comodidad sin lÌmites",
-        "spec2": "AudÌfonos Bluetooth",
-        "spec3": "Audio de alta resoluciÛn LHDC",
+        "spec1": "Comodidad sin l√≠mites",
+        "spec2": "Aud√≠fonos Bluetooth",
+        "spec3": "Audio de alta resoluci√≥n LHDC",
         "precio": 0,
         "precioOferta": 0
     }
@@ -2062,7 +2062,7 @@ const productos = [
         "nombre": "Redmi Buds 5",
         "categoria": "audifonos",
         "spec1": "El sonido que buscas",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2072,8 +2072,8 @@ const productos = [
         "codigo": "9723",
         "nombre": "Redmi Buds 6 Pro",
         "categoria": "audifonos",
-        "spec1": "Comodidad sin lÌmites",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Comodidad sin l√≠mites",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2083,8 +2083,8 @@ const productos = [
         "codigo": "9724",
         "nombre": "Redmi Buds 6 Pro",
         "categoria": "audifonos",
-        "spec1": "Comodidad sin lÌmites",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Comodidad sin l√≠mites",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2094,8 +2094,8 @@ const productos = [
         "codigo": "9722",
         "nombre": "Redmi Buds 6 Pro",
         "categoria": "audifonos",
-        "spec1": "Comodidad sin lÌmites",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Comodidad sin l√≠mites",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2106,7 +2106,7 @@ const productos = [
         "nombre": "Redmi Buds 6",
         "categoria": "audifonos",
         "spec1": "El sonido que buscas",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2117,7 +2117,7 @@ const productos = [
         "nombre": "Redmi Buds 6",
         "categoria": "audifonos",
         "spec1": "El sonido que buscas",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2128,7 +2128,7 @@ const productos = [
         "nombre": "Redmi Buds 6",
         "categoria": "audifonos",
         "spec1": "El sonido que buscas",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2139,7 +2139,7 @@ const productos = [
         "nombre": "Redmi Buds 6 Lite",
         "categoria": "audifonos",
         "spec1": "El sonido que buscas",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 12,4mm titanio",
         "precio": 0,
         "precioOferta": 0
@@ -2149,8 +2149,8 @@ const productos = [
         "codigo": "11606",
         "nombre": "Redmi Buds 8 Pro",
         "categoria": "audifonos",
-        "spec1": "Comodidad sin lÌmites",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Comodidad sin l√≠mites",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2160,8 +2160,8 @@ const productos = [
         "codigo": "11607",
         "nombre": "Redmi Buds 8 Pro",
         "categoria": "audifonos",
-        "spec1": "Comodidad sin lÌmites",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Comodidad sin l√≠mites",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2171,8 +2171,8 @@ const productos = [
         "codigo": "11605",
         "nombre": "Redmi Buds 8 Pro",
         "categoria": "audifonos",
-        "spec1": "Comodidad sin lÌmites",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Comodidad sin l√≠mites",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2182,8 +2182,8 @@ const productos = [
         "codigo": "GT11606",
         "nombre": "Redmi Buds 8 Pro",
         "categoria": "audifonos",
-        "spec1": "Comodidad sin lÌmites",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Comodidad sin l√≠mites",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Calidad de Sonido LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2194,7 +2194,7 @@ const productos = [
         "nombre": "Redmi Buds 6 Active",
         "categoria": "audifonos",
         "spec1": "El ritmo de tu vida",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 14 MM",
         "precio": 0,
         "precioOferta": 0
@@ -2205,7 +2205,7 @@ const productos = [
         "nombre": "Redmi Buds 6 Active",
         "categoria": "audifonos",
         "spec1": "El ritmo de tu vida",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 14 MM",
         "precio": 0,
         "precioOferta": 0
@@ -2216,7 +2216,7 @@ const productos = [
         "nombre": "Redmi Buds 6 Active",
         "categoria": "audifonos",
         "spec1": "El ritmo de tu vida",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 14 MM",
         "precio": 0,
         "precioOferta": 0
@@ -2227,7 +2227,7 @@ const productos = [
         "nombre": "Redmi Buds 6 Active",
         "categoria": "audifonos",
         "spec1": "El ritmo de tu vida",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 14 MM",
         "precio": 0,
         "precioOferta": 0
@@ -2238,7 +2238,7 @@ const productos = [
         "nombre": "Redmu Buds 6 Play",
         "categoria": "audifonos",
         "spec1": "Ritmo a tu manera",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 10 MM",
         "precio": 0,
         "precioOferta": 0
@@ -2249,7 +2249,7 @@ const productos = [
         "nombre": "Redmu Buds 6 Play",
         "categoria": "audifonos",
         "spec1": "Ritmo a tu manera",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 10 MM",
         "precio": 0,
         "precioOferta": 0
@@ -2260,7 +2260,7 @@ const productos = [
         "nombre": "Redmu Buds 6 Play",
         "categoria": "audifonos",
         "spec1": "Ritmo a tu manera",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 10 MM",
         "precio": 0,
         "precioOferta": 0
@@ -2271,7 +2271,7 @@ const productos = [
         "nombre": "Redmu Buds 6 Play",
         "categoria": "audifonos",
         "spec1": "Ritmo a tu manera",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 10 MM",
         "precio": 0,
         "precioOferta": 0
@@ -2282,7 +2282,7 @@ const productos = [
         "nombre": "Redmu Buds 6 Play",
         "categoria": "audifonos",
         "spec1": "Ritmo a tu manera",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 10 MM",
         "precio": 0,
         "precioOferta": 0
@@ -2293,7 +2293,7 @@ const productos = [
         "nombre": "Redmu Buds 6 Play",
         "categoria": "audifonos",
         "spec1": "Ritmo a tu manera",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 10 MM",
         "precio": 0,
         "precioOferta": 0
@@ -2304,7 +2304,7 @@ const productos = [
         "nombre": "Xiaomi Buds 5",
         "categoria": "audifonos",
         "spec1": "Sonido puro, comodidad pura",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Harman AudioEFX",
         "precio": 0,
         "precioOferta": 0
@@ -2315,7 +2315,7 @@ const productos = [
         "nombre": "Xiaomi Buds 5",
         "categoria": "audifonos",
         "spec1": "Sonido puro, comodidad pura",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Harman AudioEFX",
         "precio": 0,
         "precioOferta": 0
@@ -2326,7 +2326,7 @@ const productos = [
         "nombre": "Xiaomi Buds 5",
         "categoria": "audifonos",
         "spec1": "Sonido puro, comodidad pura",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Harman AudioEFX",
         "precio": 0,
         "precioOferta": 0
@@ -2337,7 +2337,7 @@ const productos = [
         "nombre": "Xiaomi Buds 5 BT",
         "categoria": "audifonos",
         "spec1": "Diferencia que se nota",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Harman AudioEFX",
         "precio": 0,
         "precioOferta": 0
@@ -2348,7 +2348,7 @@ const productos = [
         "nombre": "Xiaomi Buds 5 BT",
         "categoria": "audifonos",
         "spec1": "Diferencia que se nota",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Harman AudioEFX",
         "precio": 0,
         "precioOferta": 0
@@ -2359,8 +2359,8 @@ const productos = [
         "nombre": "Xiaomi Buds 5 BT|WIFI",
         "categoria": "audifonos",
         "spec1": "Diferencia que se nota",
-        "spec2": "AudÌfonos Bluetooth",
-        "spec3": "QualcommÆ XPAN - WIFI*",
+        "spec2": "Aud√≠fonos Bluetooth",
+        "spec3": "Qualcomm¬Æ XPAN - WIFI*",
         "precio": 0,
         "precioOferta": 0
     }
@@ -2369,8 +2369,8 @@ const productos = [
         "codigo": "10981",
         "nombre": "Xiaomi OpenWear Stereo Pro",
         "categoria": "audifonos",
-        "spec1": "Comodidad de diseÒo abierto",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Comodidad de dise√±o abierto",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Harman AudioEFX. LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2380,8 +2380,8 @@ const productos = [
         "codigo": "10983",
         "nombre": "Xiaomi OpenWear Stereo Pro",
         "categoria": "audifonos",
-        "spec1": "Comodidad de diseÒo abierto",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Comodidad de dise√±o abierto",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Harman AudioEFX. LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2391,8 +2391,8 @@ const productos = [
         "codigo": "10982",
         "nombre": "Xiaomi OpenWear Stereo Pro",
         "categoria": "audifonos",
-        "spec1": "Comodidad de diseÒo abierto",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec1": "Comodidad de dise√±o abierto",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Harman AudioEFX. LDAC",
         "precio": 0,
         "precioOferta": 0
@@ -2403,7 +2403,7 @@ const productos = [
         "nombre": "Redmi Buds 8 Lite",
         "categoria": "audifonos",
         "spec1": "El ritmo de tu vida",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 12mm titanio",
         "precio": 0,
         "precioOferta": 0
@@ -2414,7 +2414,7 @@ const productos = [
         "nombre": "Redmi Buds 8 Lite",
         "categoria": "audifonos",
         "spec1": "El ritmo de tu vida",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 12mm titanio",
         "precio": 0,
         "precioOferta": 0
@@ -2425,7 +2425,7 @@ const productos = [
         "nombre": "Redmi Buds 8 Lite",
         "categoria": "audifonos",
         "spec1": "El ritmo de tu vida",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 12mm titanio",
         "precio": 0,
         "precioOferta": 0
@@ -2436,7 +2436,7 @@ const productos = [
         "nombre": "Redmi Buds 8 Lite",
         "categoria": "audifonos",
         "spec1": "El ritmo de tu vida",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 12mm titanio",
         "precio": 0,
         "precioOferta": 0
@@ -2447,7 +2447,7 @@ const productos = [
         "nombre": "Redmi Buds 8 Lite",
         "categoria": "audifonos",
         "spec1": "El ritmo de tu vida",
-        "spec2": "AudÌfonos Bluetooth",
+        "spec2": "Aud√≠fonos Bluetooth",
         "spec3": "Diafragma 12mm titanio",
         "precio": 0,
         "precioOferta": 0
