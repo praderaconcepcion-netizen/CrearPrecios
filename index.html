@@ -17,7 +17,7 @@
         }
 
         * { box-sizing: border-box; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        body { background-color: var(--xiaomi-light); color: var(--xiaomi-dark); padding-bottom: 90px; }
+        body { background-color: var(--xiaomi-light); color: var(--xiaomi-dark); padding-bottom: 95px; }
 
         .header { background-color: var(--white); padding: 15px; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
         .logo-mi { width: 35px; height: 35px; background-color: var(--xiaomi-orange); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-size: 1.1rem; }
@@ -30,11 +30,11 @@
         .lista-items { display: flex; flex-direction: column; gap: 10px; }
         .tarjeta-item { background: var(--white); padding: 15px; border-radius: 16px; border: 1px solid #EAEAEA; cursor: pointer; display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.01); transition: transform 0.1s; }
         .tarjeta-item:active { transform: scale(0.98); background: #FAFAFA; }
-        .chk-seleccion { width: 20px; height: 20px; accent-color: var(--xiaomi-orange); cursor: pointer; }
+        .chk-seleccion { width: 22px; height: 22px; accent-color: var(--xiaomi-orange); cursor: pointer; }
         
         .badge-cat { font-size: 0.65rem; font-weight: 800; background: #EFEFEF; color: #555; padding: 3px 8px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
 
-        /* BARRA FLOTANTE INFERIOR DE IMPRESIÓN */
+        /* BARRA FLOTANTE MULTI-SELECCIÓN */
         .barra-flotante { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--white); box-shadow: 0 -4px 20px rgba(0,0,0,0.08); padding: 15px; display: none; justify-content: center; z-index: 90; }
         .barra-flotante-contenido { width: 100%; max-width: 520px; display: flex; gap: 10px; }
 
@@ -47,20 +47,20 @@
         .btn-principal { background: var(--xiaomi-orange); color: var(--white); border: none; padding: 14px; border-radius: 14px; font-size: 0.95rem; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; flex: 1; }
         .btn-secundario { background: var(--xiaomi-dark); color: var(--white); border: none; padding: 14px; border-radius: 14px; font-size: 0.95rem; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; flex: 1; }
 
-        /* CONTENEDOR DE IMPRESIÓN EN CUADRÍCULA (GRID DE HOJA COMPLETADA) */
+        /* CONTENEDOR DE IMPRESIÓN MÚLTIPLE (A4/CARTA) */
         .impresion-contenedor { display: none; background: #fff; padding: 0; }
-        .grid-etiquetas { display: grid; grid-template-columns: repeat(2, 10.5cm); justify-content: center; gap: 0cm; background: #fff; }
+        .grid-etiquetas { display: grid; grid-template-columns: repeat(2, 10.0cm); justify-content: center; gap: 0cm; background: #fff; }
 
         /* =======================================================
-           ESTRUCTURA DE MEDIDAS OFICIALES DE EXPOSICIÓN
+           DIMENSIONES Y TEXTOS CALCULADOS EXACTOS DESDE EXCEL
            ======================================================= */
         
-        /* 1. MEDIDA PEQUEÑA HORIZONTAL (Ecosistema - Góndolas / Ganchos) */
+        /* 1. BBDD: MEDIDA COMPACTA DE GÓNDOLA (10x4 cm -> Calza 14 por Hoja) */
         .ficha-pequena {
-            width: 10.5cm;
-            height: 5.5cm;
-            border: 1px solid #111; /* Línea delgada para guiar el corte exacto */
-            padding: 10px 14px;
+            width: 10.0cm;
+            height: 4.0cm;
+            border: 0.5px dashed #999; /* Guía de corte sutil */
+            padding: 6px 10px;
             background: #FFFFFF;
             overflow: hidden;
             display: flex;
@@ -68,34 +68,59 @@
             justify-content: space-between;
             box-sizing: border-box;
         }
-        .ficha-pequena .eco-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid var(--xiaomi-dark); padding-bottom: 4px; }
-        .ficha-pequena .eco-logo { font-size: 13px; font-weight: 900; color: #fff; background: var(--xiaomi-orange); padding: 1px 6px; border-radius: 3px; }
-        .ficha-pequena .eco-titulo { font-size: 12px; font-weight: 800; text-transform: uppercase; line-height: 1.2; margin: 4px 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-        .ficha-pequena .eco-specs { font-size: 8.5px; color: #444; line-height: 1.3; font-weight: 500; }
-        .ficha-pequena .eco-precios-box { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 2px; }
-        .ficha-pequena .precio-gigante { font-size: 20px; font-weight: 900; color: var(--xiaomi-dark); letter-spacing: -0.5px; line-height: 1; }
-        .ficha-pequena .precio-oferta-gigante { font-size: 22px; font-weight: 900; color: var(--xiaomi-orange); letter-spacing: -0.5px; line-height: 1; }
+        .ficha-pequena .eco-header { display: flex; justify-content: space-between; align-items: center; }
+        .ficha-pequena .eco-logo { font-size: 11px; font-weight: 900; color: #fff; background: var(--xiaomi-orange); padding: 1px 5px; border-radius: 2px; }
+        .ficha-pequena .eco-titulo { font-size: 11px; font-weight: 800; text-transform: uppercase; line-height: 1.1; margin: 2px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .ficha-pequena .eco-specs { font-size: 8cm; font-size: 8px; color: var(--xiaomi-grey); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .ficha-pequena .eco-precios-box { display: flex; justify-content: space-between; align-items: flex-end; }
+        .ficha-pequena .precio-gigante { font-size: 18px; font-weight: 900; color: var(--xiaomi-dark); line-height: 1; }
+        .ficha-pequena .precio-oferta-gigante { font-size: 20px; font-weight: 900; color: var(--xiaomi-orange); line-height: 1; }
+        .ficha-pequena .sku-mini { font-size: 7px; color: #999; font-weight: 700; text-transform: uppercase; }
 
-        /* 2. MEDIDA MEDIANA VERTICAL (Teléfonos de Entrada / Pedestales Compactos) */
-        .ficha-mediana { width: 9.0cm; height: 12.0cm; border: 3px solid var(--xiaomi-dark); padding: 16px 14px; margin: 0 auto; background: #FFFFFF; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
-        .ficha-mediana .tech-tag { position: absolute; top: 0; right: 14px; background: var(--xiaomi-dark); color: #fff; font-size: 8px; font-weight: 900; padding: 3px 8px; border-radius: 0 0 4px 4px; text-transform: uppercase; }
+        /* 2. BBDDTEL: MEDIDA MEDIANA VERTICAL (9.0cm x 12.0cm) */
+        .ficha-mediana {
+            width: 9.0cm;
+            height: 12.0cm;
+            border: 3px solid var(--xiaomi-dark);
+            padding: 16px 14px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+        .ficha-mediana .tech-tag { position: absolute; top: 0; right: 14px; background: var(--xiaomi-dark); color: #fff; font-size: 8px; font-weight: 900; padding: 3px 8px; border-radius: 0 0 4px 4px; text-transform: uppercase; letter-spacing: 0.5px; }
         .ficha-mediana .tech-logo { font-size: 22px; font-weight: 900; color: var(--xiaomi-orange); line-height: 1; margin-bottom: 6px; }
-        .ficha-mediana .tech-titulo { font-size: 16px; font-weight: 900; text-transform: uppercase; border-bottom: 2px solid var(--xiaomi-orange); padding-bottom: 4px; margin-bottom: 8px; line-height: 1.2; }
-        .ficha-mediana .box-spec-tecnica { display: flex; flex-direction: column; gap: 6px; background: #F9F9F9; padding: 10px; border-radius: 5px; border-left: 4px solid var(--xiaomi-orange); margin-bottom: auto; }
-        .ficha-mediana .spec-line { font-size: 10.5px; font-weight: 700; color: #222; text-transform: uppercase; }
+        .ficha-mediana .tech-titulo { font-size: 15px; font-weight: 900; text-transform: uppercase; border-bottom: 2px solid var(--xiaomi-orange); padding-bottom: 4px; margin-bottom: 8px; line-height: 1.1; }
+        .ficha-mediana .box-spec-tecnica { display: flex; flex-direction: column; gap: 5px; background: #F9F9F9; padding: 10px; border-radius: 5px; border-left: 4px solid var(--xiaomi-orange); margin-bottom: auto; }
+        .ficha-mediana .spec-line { font-size: 10px; font-weight: 700; color: #222; text-transform: uppercase; line-height: 1.3; }
         .ficha-mediana .box-valores { background: #F4F4F4; padding: 10px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
-        .ficha-mediana .f-ahora { font-size: 24px; font-weight: 900; color: var(--xiaomi-dark); line-height: 1; }
+        .ficha-mediana .f-ahora { font-size: 22px; font-weight: 900; color: var(--xiaomi-dark); line-height: 1; }
         .ficha-mediana .f-ahora.oferta { color: var(--xiaomi-orange); }
 
-        /* 3. MEDIDA GRANDE VERTICAL (Teléfonos Principales, Watch, Buds) */
-        .ficha-grande { width: 10.5cm; height: 14.8cm; border: 3.5px solid var(--xiaomi-dark); padding: 24px 18px; margin: 0 auto; background: #FFFFFF; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
-        .ficha-grande .tech-tag { position: absolute; top: 0; right: 18px; background: var(--xiaomi-dark); color: #fff; font-size: 9px; font-weight: 900; padding: 4px 10px; border-radius: 0 0 5px 5px; text-transform: uppercase; letter-spacing: 0.5px; }
-        .ficha-grande .tech-logo { font-size: 26px; font-weight: 900; color: var(--xiaomi-orange); line-height: 1; margin-bottom: 10px; }
-        .ficha-grande .tech-titulo { font-size: 19px; font-weight: 900; text-transform: uppercase; border-bottom: 2.5px solid var(--xiaomi-orange); padding-bottom: 6px; margin-bottom: 12px; line-height: 1.2; }
-        .ficha-grande .box-spec-tecnica { display: flex; flex-direction: column; gap: 8px; background: #F9F9F9; padding: 12px; border-radius: 6px; border-left: 4.5px solid var(--xiaomi-orange); margin-bottom: auto; }
-        .ficha-grande .spec-line { font-size: 11.5px; font-weight: 700; color: #222; text-transform: uppercase; }
-        .ficha-grande .box-valores { background: #F4F4F4; padding: 14px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; margin-top: 15px; }
-        .ficha-grande .f-ahora { font-size: 30px; font-weight: 900; color: var(--xiaomi-dark); line-height: 1; }
+        /* 3. BBDDTEL / WATCH / BUDS: MEDIDA GRANDE VERTICAL EXTRA COMPLETA (10.5cm x 14.8cm) */
+        .ficha-grande {
+            width: 10.5cm;
+            height: 14.8cm;
+            border: 4px solid var(--xiaomi-dark);
+            padding: 22px 16px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+        .ficha-grande .tech-tag { position: absolute; top: 0; right: 16px; background: var(--xiaomi-dark); color: #fff; font-size: 9px; font-weight: 900; padding: 4px 10px; border-radius: 0 0 5px 5px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .ficha-grande .tech-logo { font-size: 26px; font-weight: 900; color: var(--xiaomi-orange); line-height: 1; margin-bottom: 8px; }
+        .ficha-grande .tech-titulo { font-size: 18px; font-weight: 900; text-transform: uppercase; border-bottom: 3px solid var(--xiaomi-orange); padding-bottom: 6px; margin-bottom: 10px; line-height: 1.2; }
+        .ficha-grande .box-spec-tecnica { display: flex; flex-direction: column; gap: 7px; background: #F9F9F9; padding: 12px; border-radius: 6px; border-left: 5px solid var(--xiaomi-orange); margin-bottom: auto; }
+        .ficha-grande .spec-line { font-size: 11px; font-weight: 700; color: #111; text-transform: uppercase; line-height: 1.4; }
+        .ficha-grande .box-valores { background: #F4F4F4; padding: 12px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
+        .ficha-grande .f-ahora { font-size: 28px; font-weight: 900; color: var(--xiaomi-dark); line-height: 1; }
         .ficha-grande .f-ahora.oferta { color: var(--xiaomi-orange); }
 
         .sku-footer { text-align: right; font-size: 7.5px; color: #888; font-weight: 700; border-top: 1px solid #EEE; padding-top: 5px; margin-top: 5px; text-transform: uppercase; }
@@ -105,10 +130,10 @@
             body { background: #FFFFFF; padding: 0; margin: 0; }
             .header, .contenedor, .modal, .btn-pantalla-volver, .barra-flotante { display: none !important; }
             .impresion-contenedor { display: block !important; padding: 0 !important; margin: 0 !important; }
-            .grid-etiquetas { page-break-inside: replace; }
-            .ficha-pequena { page-break-inside: avoid; }
-            .ficha-mediana, .ficha-grande { page-break-inside: avoid; border-color: #000 !important; margin-top: 0cm; }
-            @page { margin: 0.4cm 0.4cm; }
+            .grid-etiquetas { page-break-inside: replace; margin: 0 auto; }
+            .ficha-pequena { page-break-inside: avoid; border: 0.5px dashed #000 !important; }
+            .ficha-mediana, .ficha-grande { page-break-inside: avoid; border-color: #000 !important; margin: 0 auto; }
+            @page { margin: 0.5cm; }
         }
     </style>
 </head>
@@ -124,11 +149,11 @@
         <div id="listaProductos" class="lista-items"></div>
     </div>
 
-    <!-- BARRA FLOTANTE MULTI-SELECCIÓN -->
+    <!-- BARRA FLOTANTE MULTI-SELECCIÓN ECOSISTEMA -->
     <div class="barra-flotante" id="barraEcosistema">
         <div class="barra-flotante-contenido">
-            <button onclick="imprimirSeleccionMasiva('normal')" class="btn-secundario">📄 Imprimir en Bloque (Regular)</button>
-            <button onclick="imprimirSeleccionMasiva('oferta')" class="btn-principal">🔥 Imprimir en Bloque (Oferta)</button>
+            <button onclick="imprimirSeleccionMasiva('normal')" class="btn-secundario">📄 Hoja Completa (Regular)</button>
+            <button onclick="imprimirSeleccionMasiva('oferta')" class="btn-principal">🔥 Hoja Completa (Oferta)</button>
         </div>
     </div>
 
@@ -144,7 +169,7 @@
                 <button class="btn-cerrar" onclick="cerrarModal()">&times;</button>
             </div>
             <div style="margin-top: 10px;">
-                <h4 style="font-size:0.85rem; text-transform:uppercase; color:var(--xiaomi-grey); font-weight:700; margin-bottom:10px;">Formato de Impresión Unitario:</h4>
+                <h4 style="font-size:0.85rem; text-transform:uppercase; color:var(--xiaomi-grey); font-weight:700; margin-bottom:10px;">Formato de Ficha:</h4>
                 <div id="bloqueBotonesImpresion"></div>
             </div>
         </div>
@@ -188,17 +213,13 @@
         function alternarSeleccion(codigo) {
             const p = productos.find(x => x.codigo === codigo);
             const index = itemsSeleccionados.findIndex(x => x.codigo === codigo);
-            if (index > -1) {
-                itemsSeleccionados.splice(index, 1);
-            } else {
-                itemsSeleccionados.push(p);
-            }
+            if (index > -1) itemsSeleccionados.splice(index, 1);
+            else itemsSeleccionados.push(p);
             actualizarBarraFlotante();
         }
 
         function actualizarBarraFlotante() {
-            const barra = document.getElementById('barraEcosistema');
-            barra.style.display = itemsSeleccionados.length > 0 ? 'flex' : 'none';
+            document.getElementById('barraEcosistema').style.display = itemsSeleccionados.length > 0 ? 'flex' : 'none';
         }
 
         function abrirDetalle(p) {
@@ -212,16 +233,18 @@
 
             if (p.categoria === 'ecosistema') {
                 btnBloque.innerHTML = `
-                    <button onclick="imprimirEtiqueta('eco_normal')" class="btn-secundario">📄 Imprimir Esta Sola (Regular)</button>
-                    <button onclick="imprimirEtiqueta('eco_oferta')" class="btn-principal" style="margin-top:8px;">🔥 Imprimir Esta Sola (Oferta)</button>
+                    <button onclick="imprimirEtiqueta('eco_normal')" class="btn-secundario">📄 Imprimir Individual (Regular)</button>
+                    <button onclick="imprimirEtiqueta('eco_oferta')" class="btn-principal" style="margin-top:8px;">🔥 Imprimir Individual (Oferta)</button>
                 `;
             } else if (p.categoria === 'telefono') {
                 btnBloque.innerHTML = `
-                    <button onclick="imprimirEtiqueta('tech_grande')" class="btn-principal">📱 Medida Grande Vertical (Principal)</button>
-                    <button onclick="imprimirEtiqueta('tech_mediana')" class="btn-secundario" style="margin-top:8px;">📱 Medida Mediana Vertical (Entrada)</button>
+                    <button onclick="imprimirEtiqueta('tech_grande')" class="btn-principal">📱 Medida Grande (10.5 x 14.8 cm)</button>
+                    <button onclick="imprimirEtiqueta('tech_mediana')" class="btn-secundario" style="margin-top:8px;">📱 Medida Mediana (9.0 x 12.0 cm)</button>
                 `;
-            } else {
-                btnBloque.innerHTML = `<button onclick="imprimirEtiqueta('tech_grande')" class="btn-principal">📄 Generar Ficha Grande Vertical</button>`;
+            } else if (p.categoria === 'reloj') {
+                btnBloque.innerHTML = `<button onclick="imprimirEtiqueta('tech_grande')" class="btn-principal">⌚ Ficha Reloj (10.5 x 14.8 cm)</button>`;
+            } else if (p.categoria === 'audifonos') {
+                btnBloque.innerHTML = `<button onclick="imprimirEtiqueta('tech_grande')" class="btn-principal">🎧 Ficha Audífonos (10.5 x 14.8 cm)</button>`;
             }
 
             document.getElementById('modalOpciones').style.display = 'flex';
@@ -230,43 +253,40 @@
         function generarHTMLFichaPequena(p, modo) {
             const pNorm = (Number(p.precio)||0).toFixed(2);
             const pOfer = (Number(p.precioOferta)||pNorm).toFixed(2);
+            const specsCompuestas = [p.spec1, p.spec2, p.spec3].filter(Boolean).join(' | ');
+            
             if (modo === 'oferta') {
                 return `
-                    <div class="ficha-pequena" style="border-color: var(--xiaomi-orange);">
+                    <div class="ficha-pequena" style="border-bottom:1px solid var(--xiaomi-orange);">
                         <div class="eco-header"><div class="eco-logo">mi</div><div style="font-size:8px; font-weight:900; color:var(--xiaomi-orange);">OFERTA</div></div>
                         <div class="eco-titulo">${p.nombre}</div>
-                        <div class="eco-specs">${p.spec1 ? `• ${p.spec1} ` : ''} ${p.spec2 ? `• ${p.spec2} ` : ''} ${p.spec3 ? `• ${p.spec3}` : ''}</div>
+                        <div class="eco-specs">${specsCompuestas}</div>
                         <div class="eco-precios-box">
-                            <div style="font-size:7.5px; font-weight:700; color:#777; line-height:1.1;"><span style="text-decoration:line-through;">Antes: Q ${pNorm}</span><br><span style="color:var(--xiaomi-orange); font-weight:900;">OFERTA</span></div>
+                            <div style="font-size:7px; font-weight:700; color:#777;"><span style="text-decoration:line-through;">A: Q ${pNorm}</span></div>
                             <div class="precio-oferta-gigante">Q ${pOfer}</div>
                         </div>
-                        <div class="sku-footer">SKU: ${p.codigo}</div>
+                        <div class="sku-mini">SKU: ${p.codigo}</div>
                     </div>`;
             } else {
                 return `
                     <div class="ficha-pequena">
-                        <div class="eco-header"><div class="eco-logo">mi</div><div style="font-size:8px; font-weight:800; color:var(--xiaomi-grey);">ORIGINAL</div></div>
+                        <div class="eco-header"><div class="eco-logo">mi</div><div style="font-size:7px; font-weight:700; color:var(--xiaomi-grey);">XIAOMI</div></div>
                         <div class="eco-titulo">${p.nombre}</div>
-                        <div class="eco-specs">${p.spec1 ? `• ${p.spec1} ` : ''} ${p.spec2 ? `• ${p.spec2} ` : ''} ${p.spec3 ? `• ${p.spec3}` : ''}</div>
+                        <div class="eco-specs">${specsCompuestas}</div>
                         <div class="eco-precios-box">
-                            <div><span style="font-size:7px; font-weight:700; color:#666;">PRECIO NETO</span></div>
+                            <div style="font-size:7px; font-weight:700; color:#555;">PRECIO:</div>
                             <div class="precio-gigante">Q ${pNorm}</div>
                         </div>
-                        <div class="sku-footer">SKU: ${p.codigo}</div>
+                        <div class="sku-mini">SKU: ${p.codigo}</div>
                     </div>`;
             }
         }
 
         function imprimirSeleccionMasiva(modo) {
             if(itemsSeleccionados.length === 0) return;
-            const capa = document.getElementById('capaImpresion');
-            
             let htmlGrid = '<div class="grid-etiquetas">';
-            itemsSeleccionados.forEach(p => {
-                htmlGrid += generarHTMLFichaPequena(p, modo);
-            });
+            itemsSeleccionados.forEach(p => { htmlGrid += generarHTMLFichaPequena(p, modo); });
             htmlGrid += '</div>';
-
             ejecutarModoImpresion(htmlGrid);
         }
 
@@ -285,14 +305,14 @@
                         <div class="tech-tag">${seleccionado.categoria}</div><div class="tech-logo">mi</div>
                         <div class="tech-titulo">${seleccionado.nombre}</div>
                         <div class="box-spec-tecnica">
-                            ${seleccionado.spec1 ? `<div class="spec-line">• ${seleccionado.spec1}</div>` : ''}
-                            ${seleccionado.spec2 ? `<div class="spec-line">• ${seleccionado.spec2}</div>` : ''}
-                            ${seleccionado.spec3 ? `<div class="spec-line">• ${seleccionado.spec3}</div>` : ''}
+                            ${seleccionado.spec1 ? `<div class="spec-line">• PANTALLA: ${seleccionado.spec1}</div>` : ''}
+                            ${seleccionado.spec2 ? `<div class="spec-line">• PROCESADOR: ${seleccionado.spec2}</div>` : ''}
+                            ${seleccionado.spec3 ? `<div class="spec-line">• MEMORIA / BATERÍA: ${seleccionado.spec3}</div>` : ''}
                         </div>
                         <div class="box-valores">
                             <div>
                                 ${esOferta ? `<div style="font-size:8px; font-weight:700; color:#777; text-decoration:line-through;">ANTES: Q ${pNorm}</div>` : ''}
-                                <div style="font-size:9px; font-weight:900; color:var(--xiaomi-grey);">${esOferta ? 'OFERTA:' : 'NETO:'}</div>
+                                <div style="font-size:9px; font-weight:900; color:var(--xiaomi-grey);">${esOferta ? 'PROMO:' : 'NETO:'}</div>
                             </div>
                             <div class="f-ahora ${esOferta ? 'oferta' : ''}">Q ${esOferta ? pOfer : pNorm}</div>
                         </div>
@@ -304,18 +324,18 @@
                         <div class="tech-tag">${seleccionado.categoria}</div><div class="tech-logo">mi</div>
                         <div class="tech-titulo">${seleccionado.nombre}</div>
                         <div class="box-spec-tecnica">
-                            ${seleccionado.spec1 ? `<div class="spec-line">• ${seleccionado.spec1}</div>` : ''}
-                            ${seleccionado.spec2 ? `<div class="spec-line">• ${seleccionado.spec2}</div>` : ''}
-                            ${seleccionado.spec3 ? `<div class="spec-line">• ${seleccionado.spec3}</div>` : ''}
+                            ${seleccionado.spec1 ? `<div class="spec-line">• PANTALLA: ${seleccionado.spec1}</div>` : ''}
+                            ${seleccionado.spec2 ? `<div class="spec-line">• PROCESADOR: ${seleccionado.spec2}</div>` : ''}
+                            ${seleccionado.spec3 ? `<div class="spec-line">• DETALLES BATERÍA / MEMORIA: ${seleccionado.spec3}</div>` : ''}
                         </div>
                         <div class="box-valores">
                             <div>
                                 ${esOferta ? `<div style="font-size:10px; font-weight:700; color:#777; text-decoration:line-through; margin-bottom:2px;">ANTES: Q ${pNorm}</div>` : ''}
-                                <div style="font-size:10px; font-weight:900; color:var(--xiaomi-grey);">PRECIO NETO:</div>
+                                <div style="font-size:10px; font-weight:900; color:var(--xiaomi-grey);">${esOferta ? 'OFERTA ESPECIAL:' : 'PRECIO NETO:'}</div>
                             </div>
                             <div class="f-ahora ${esOferta ? 'oferta' : ''}">Q ${esOferta ? pOfer : pNorm}</div>
                         </div>
-                        <div class="sku-footer">SKU: ${seleccionado.codigo} | TIENDA XIAOMI</div>
+                        <div class="sku-footer">SKU: ${seleccionado.codigo} | CORPORATIVO XIAOMI</div>
                     </div>`;
             }
 
@@ -324,13 +344,11 @@
 
         function ejecutarModoImpresion(html) {
             const capa = document.getElementById('capaImpresion');
-            capa.innerHTML = html + `<button class="btn-pantalla-volver" onclick="revertirModoImpresora()">⬅️ Limpiar e Ir al Menú</button>`;
-            
+            capa.innerHTML = html + `<button class="btn-pantalla-volver" onclick="revertirModoImpresora()">⬅️ Salir de Impresión</button>`;
             document.getElementById('vistaPrincipal').style.display = 'none';
             document.querySelector('.header').style.display = 'none';
             cerrarModal();
             capa.style.display = 'block';
-            
             setTimeout(() => { window.print(); }, 250);
         }
 
